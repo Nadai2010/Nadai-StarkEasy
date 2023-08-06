@@ -1,0 +1,5 @@
+export const VOTER_CLASS_HASH =
+  "0x2ce8d6a94592d2b47da3902f8b00bd4cd5c575ffd8d0aa33cebd5dbf0eae906";
+
+export const VOTER_CONTRACT_ADDRESS =
+  "0x07cfd595045ddbe08ce5b562f46c0d105af80794380878728634a9e8a84a7942";

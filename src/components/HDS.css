@@ -1,0 +1,155 @@
+.hds-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2%;
+  
+}
+
+.hds-video {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hds-title {
+  font-size: 2.5vw;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "IBM Plex Mono", Arial, sans-serif;
+  margin-bottom: 4vw;
+  margin-top: 4vw;
+}
+
+.hds-info {
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.hds-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 4vw;
+}
+
+.video-container {
+  margin-right: 2vw;
+  
+}
+
+.hds-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hds-button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1vw;
+}
+
+.hds-button {
+  display: inline-block;
+  margin: 1vw;
+  padding: 0.5vw 2vw;
+  background-color: #6d212e4f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.hds-button:hover {
+  background-color: #0d0b52a9;
+}
+
+.hds-mint-button-active {
+  background-color: #00fcfccb;
+  color: #0e0d0d;
+}
+
+.mint-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1vw;
+}
+
+.connected-container {
+  margin-top: 1vw;
+}
+
+.wallet-address {
+  margin-bottom: 0.5vw;
+}
+
+.mint-nft-container {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 10vw;
+  height: auto;
+  margin-right: 1vw;
+}
+
+.mint-button-container {
+  margin-top: 1vw;
+  background-color: #21226d4f;
+  border-radius: 4px;
+  padding: 1vw;
+  display: inline-block;
+}
+
+.mint-button {
+  background-color: #21226d4f;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 0.5vw 2vw;
+  transition: background-color 0.3s ease;
+}
+
+.mint-button:hover {
+  background-color: #0d0b52a9;
+}
+
+@media (max-width: 768px) {
+  .hds-title {
+    font-size: 3.5vw;
+    margin-bottom: 6vw;
+    margin-top: -9vw;
+  }
+
+  .hds-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6vw;
+  }
+
+  .video-container {
+    margin-right: 0;
+    margin-bottom: 4vw;
+    
+  }
+
+  .hds-button {
+    padding: 0.5vw 1vw;
+    margin: 1vw;
+  }
+
+  .mint-button-container {
+    padding: 1vw;
+  }
+}
