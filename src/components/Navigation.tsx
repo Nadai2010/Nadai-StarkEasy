@@ -35,8 +35,9 @@ const MenuItem = styled.li`
   cursor: pointer;
   font-size: 22px; /* Tamaño de la fuente reducido */
 
-  @media (max-width: 768px) {
-    margin: 0.5rem 0;
+  @media (max-width: 40em) {
+    font-size: ${(props) => props.theme.fontxs}; /* Tamaño de fuente para dispositivos móviles */
+    text-align: center;
   }
 `;
 const HamburgerMenu = styled.span``;

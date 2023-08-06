@@ -12,7 +12,7 @@ const Title = styled.h2`
 
   span {
     text-transform: uppercase;
-    font-family: "Akaya Telivigala", cursive;
+    
   }
   .text {
     color: ${(props) => props.theme.hoverColor};

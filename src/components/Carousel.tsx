@@ -9,44 +9,63 @@ import Heroe6 from "../assets/Heroe6.png";
 import Heroe7 from "../assets/Heroe7.png";
 
 const CarouselContainer = styled.div`
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden; /* Agregar overflow para manejar el contenido */
 `;
 
 const Slide = styled.div`
-  width: 100%; /* Puedes ajustar este valor según tus necesidades */
-  height: 600px; /* Ajusta la altura según tus necesidades */
+  width: 40%;
+  height: 90vh;
   background-color: transparent;
-  border-radius: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   outline: none;
   padding: 10px;
+  margin-top: 4rem;
+
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    padding: 20px;
+  }
 `;
 
 const SlideImage = styled.img`
   width: 100%;
   height: auto;
-  max-height: 100%;
+  max-height: 80%; /* Ajusta la altura de la imagen en móviles */
   object-fit: contain;
   transition: transform 0.3s ease;
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
+
+  @media (max-width: 768px) {
+    max-height: 50%; /* Ajusta la altura máxima de la imagen en dispositivos móviles */
+  }
+
 `;
 
 const DotsContainer = styled.div`
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
 `;
+
 
 const Carousel = () => {
   const settings = {
@@ -67,12 +86,11 @@ const Carousel = () => {
           <SlideImage src={Heroe2} alt="Stark Easy card" />
         </Slide>
         <Slide>
-          <SlideImage src={Heroe7} alt="Stark Easy card" />
-        </Slide>
-        <Slide>
           <SlideImage src={Heroe6} alt="Stark Easy card" />
         </Slide>
-        {/* ... otras diapositivas ... */}
+        <Slide>
+          <SlideImage src={Heroe7} alt="Stark Easy card" />
+        </Slide>
       </Slider>
       <DotsContainer>
         <Slider {...settings} />
