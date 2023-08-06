@@ -163,8 +163,7 @@ const Footer = () => {
       </Container>
       <Bottom>
         <span>
-          &copy; {new Date().getFullYear()} Keep Starknet Strange. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} 
         </span>
       </Bottom>
     </Section>

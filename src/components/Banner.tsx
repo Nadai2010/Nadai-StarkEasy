@@ -102,11 +102,10 @@ const Banner = () => {
   return (
     <Section>
       <Title>
-        Football is an infinite game. There is no end, no beginning, but it
-        continues in cycle.{" "}
+        {" "}
       </Title>
       <BtnContainer>
-        <JoinNow>Play Now</JoinNow>
+        <JoinNow>Stark Easy</JoinNow>
       </BtnContainer>
     </Section>
   );

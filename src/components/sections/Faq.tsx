@@ -90,53 +90,29 @@ const Faq = () => {
 
       <Container>
         <Box>
-          <Accordion ScrollTrigger={ScrollTrigger} title="What is Tsubasa?">
-            Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At
-            Repellat Placeat, Adipisicing Elit. At Repellat Placeat.
+          <Accordion ScrollTrigger={ScrollTrigger} title="What is StarkEasy?"
+          >
+          “Tell me and I forget, teach me and I may remember, involve me and I learn.” — Benjamin Franklin
           </Accordion>
           <Accordion
             ScrollTrigger={ScrollTrigger}
-            title="What makes Tsubasa different from other card games?"
+            title="What makes StarkEasy unique?"
           >
-            Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At
-            Repellat Placeat, Adipisicing Elit. At Repellat Placeat.
+          “Tell me and I forget, teach me and I may remember, involve me and I learn.” — Benjamin Franklin
+          </Accordion>
+          </Box>
+          <Box>
+          <Accordion
+            ScrollTrigger={ScrollTrigger}
+            title="What can you learn on StarkEasy?"
+          >
+          “Tell me and I forget, teach me and I may remember, involve me and I learn.” — Benjamin Franklin
           </Accordion>
           <Accordion
             ScrollTrigger={ScrollTrigger}
-            title="What are the advantages of a blockchain-based game?"
+            title="How can I join the StarkEasy Community?"
           >
-            Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At
-            Repellat Placeat, Adipisicing Elit. At Repellat Placeat.
-          </Accordion>
-        </Box>
-        <Box>
-          <Accordion
-            ScrollTrigger={ScrollTrigger}
-            title="Can I sell or trade my Tsubasa cards?"
-          >
-            Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At
-            Repellat Placeat, Adipisicing Elit. At Repellat Placeat.
-          </Accordion>
-          <Accordion
-            ScrollTrigger={ScrollTrigger}
-            title="How can I join the Tsubasa community?
-"
-          >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            deserunt consequatur quisquam maxime molestias dolores ipsum,
-            exercitationem vel sint quidem aliquam modi quis impedit corporis
-            unde inventore fugiat provident in.
-          </Accordion>
-          <Accordion
-            ScrollTrigger={ScrollTrigger}
-            title="What if I need help or support while playing Tsubasa?
-"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim
-            veritatis iusto officia. Exercitationem, ducimus reiciendis. Rem,
-            maxime, similique neque minus aliquam dolore doloremque laboriosam,
-            facilis quibusdam unde sint officia.
-          </Accordion>
+          </Accordion> 
         </Box>
       </Container>
     </Section>
