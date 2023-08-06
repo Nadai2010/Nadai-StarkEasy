@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 // import Avatar3 from "../../assets/Team/Avatar3.png";
 import Avatar4 from "../../assets/Avatar/Avatar4.png";
-import Avatar2 from "../../assets/Avatar/Avatar2.png";
+// import Avatar2 from "../../assets/Avatar/Avatar2.png";
 import Avatar5 from "../../assets/Avatar/Avatar5.png";
 
 const Section = styled.section`
