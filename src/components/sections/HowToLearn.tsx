@@ -1,8 +1,7 @@
 import styled, { keyframes } from "styled-components";
-// import Avatar3 from "../../assets/Team/Avatar3.png";
-import Avatar4 from "../../assets/Avatar/Avatar4.png";
-// import Avatar2 from "../../assets/Avatar/Avatar2.png";
-import Avatar5 from "../../assets/Avatar/Avatar5.png";
+import Heroe3 from "/src/assets/Heroe3.png";
+import Heroe4 from "/src/assets/Heroe4.png";
+import Heroe5 from "/src/assets/Heroe5.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -76,7 +75,7 @@ const StyledImage = styled.img`
   transition: transform 0.2s;
 
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.6);
   }
 `;
 
@@ -106,64 +105,71 @@ const Text = styled.a`
   text-align: center;
 `;
 
+const TextContainer = styled.div`
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+`;
+
 const HowToLearn = () => {
   return (
     <Section id="howtolearn">
       <Title>How to LEARN!</Title>
       <Container>
         <InnerContainer>
-          <Text>
-          <SubTitle>Learn</SubTitle>
-          On StarkEasy you will find a lot of educational content about Starknet, its Ecosystem, 
-          its tech and its programming language (Cairo). You’ll also be able to test your knowledge 
-          by completing fun quizzes. Whether you are a newbie or a Developer, in this section you 
-          will find so many resources that will help you a lot during your Journey on Starknet.
-          </Text>
+          <TextContainer>
+            <SubTitle>Learn</SubTitle>
+            <Text>
+              On StarkEasy you will find a lot of educational content about Starknet, its Ecosystem, its tech and its programming language (Cairo). You’ll also be able to test your knowledge by completing fun quizzes. Whether you are a newbie or a Developer, in this section you will find so many resources that will help you a lot during your Journey on Starknet.
+            </Text>
+          </TextContainer>
           <LevitatingWrapper>
             <StyledImage
-              src={Avatar5}
+              src={Heroe4}
               alt="Your alt text"
-              width={300}
-              height={300}
+              width={500}
+              height={400}
             />
           </LevitatingWrapper>
         </InnerContainer>
         <InnerContainer>
           <LevitatingWrapper>
             <StyledImage
-              src={Avatar4}
+              src={Heroe5}
               alt="Your alt text"
-              width={300}
-              height={300}
+              width={500}
+              height={400}
             />
           </LevitatingWrapper>
-          <Text>
-          <SubTitle>Test your Dev Skills</SubTitle>
-          In this section, aspiring Cairo Devs will be able to interact with Cairo. Practice with 
-          one of the most promising and powerful programming languages out there!
-          </Text>
+          <TextContainer>
+            <SubTitle>Test your Dev Skills</SubTitle>
+            <Text>
+              In this section, aspiring Cairo Devs will be able to interact with Cairo. Practice with one of the most promising and powerful 
+              programming languages out there!
+            </Text>
+          </TextContainer>
+
         </InnerContainer>
         <InnerContainer>
-          <Text>
-          <SubTitle>Play</SubTitle>
-          In this section of StarkEasy, you’ll be able to play mini-educational games which are 
-          part of a very special Starknet Adventure, where you will feel like a Martial Arts 
-          apprentice ready to embark themselves on a journey to get your Starknet belts while 
-          defeating dangerous enemies in the process. Creative characters and landscapes will
-          enhance your gaming experience as you’ll try your best to rank high in the Leaderboard!
-          </Text>
+          <TextContainer>
+            <SubTitle>Play</SubTitle>
+            <Text>
+              In this section of StarkEasy, you’ll be able to play mini-educational games which are part of a very special Starknet Adventure, 
+              where you will feel like a Martial Arts apprentice ready to embark themselves on a journey to get your Starknet belts while 
+              defeating dangerous enemies in the process. Creative characters and landscapes will enhance your gaming experience as you’ll try 
+              your best to rank high in the Leaderboard!
+            </Text>
+          </TextContainer>
           <LevitatingWrapper>
             <StyledImage
-              src={Avatar5}
+              src={Heroe3}
               alt="Your alt text"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </LevitatingWrapper>
         </InnerContainer>
-        </Container>
-        
-      
+      </Container>
     </Section>
   );
 };

@@ -59,7 +59,7 @@ const Box = styled.div`
 
 
 const Title = styled.h2`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxxl};
   text-transform: capitalize;
   color: ${(props) => props.theme.body};
   align-self: flex-start;
@@ -71,14 +71,14 @@ const Title = styled.h2`
     text-align: center;
   }
   @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontl};
+    font-size: ${(props) => props.theme.fontxl};
   }
   @media (max-width: 30em) {
-    font-size: ${(props) => props.theme.fontg};
+    font-size: ${(props) => props.theme.fontxl};
   }
 `;
 const SubText = styled.p`
-  font-size: ${(props) => props.theme.fontg};
+  font-size: ${(props) => props.theme.fontlg};
   color: ${(props) => props.theme.body};
   align-self: flex-start;
   width: 80%;
@@ -183,7 +183,7 @@ const About = () => {
           program, presented by Nadai & Nurstar.
           </SubTextLight>
           <ButtonContainer>
-            <Button text="Go on an Stark Adventure" link="/Adventure" />
+            <Button text="Go on a Stark Adventure" link="/Adventure" />
           </ButtonContainer>
         </Box>
       </Container>

@@ -1,4 +1,4 @@
-import{s as i,j as t}from"./index-8efcf2de.js";const n=i.section`
+import{s as o,j as t}from"./index-30f4fdbc.js";const i=o.section`
   width: 100vw;
   height: 25rem;
   position: relative;
@@ -17,7 +17,7 @@ import{s as i,j as t}from"./index-8efcf2de.js";const n=i.section`
     height: 15rem;
     flex-direction: column;
   }
-`,o=i.h1`
+`,n=o.h1`
   font-size: ${e=>e.theme.fontxl};
   color: ${e=>e.theme.text};
   padding: 1rem 2rem;
@@ -38,7 +38,7 @@ import{s as i,j as t}from"./index-8efcf2de.js";const n=i.section`
 
     width: 100%;
   }
-`,r=i.div`
+`,r=o.div`
   width: 35%;
   display: flex;
   justify-content: flex-end;
@@ -47,7 +47,7 @@ import{s as i,j as t}from"./index-8efcf2de.js";const n=i.section`
     width: 100%;
     justify-content: center;
   }
-`,a=i.button`
+`,d=o.button`
   display: inline-block;
   background-color: ${e=>e.theme.body};
   color: ${e=>e.theme.hoverColor};
@@ -89,4 +89,4 @@ import{s as i,j as t}from"./index-8efcf2de.js";const n=i.section`
     transform: translate(-50%, -50%) scale(1);
     padding: 0.3rem;
   }
-`,s=()=>t.jsxs(n,{children:[t.jsxs(o,{children:["Football is an infinite game. There is no end, no beginning, but it continues in cycle."," "]}),t.jsx(r,{children:t.jsx(a,{children:"Play Now"})})]});export{s as default};
+`,s=()=>t.jsxs(i,{children:[t.jsx(n,{children:"sdfdsgv "}),t.jsx(r,{children:t.jsx(d,{children:"Stark Easy"})})]});export{s as default};

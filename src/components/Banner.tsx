@@ -102,7 +102,7 @@ const Banner = () => {
   return (
     <Section>
       <Title>
-        {" "}
+        {"sdfdsgv "}
       </Title>
       <BtnContainer>
         <JoinNow>Stark Easy</JoinNow>

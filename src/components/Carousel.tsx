@@ -4,7 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Avatar2 from "../assets/Avatar2.png";
+import Heroe2 from "../assets/Heroe2.png";
+import Heroe6 from "../assets/Heroe6.png";
+import Heroe7 from "../assets/Heroe7.png";
 
 const CarouselContainer = styled.div`
   width: 80%;
@@ -15,8 +17,8 @@ const CarouselContainer = styled.div`
 `;
 
 const Slide = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Puedes ajustar este valor según tus necesidades */
+  height: 600px; /* Ajusta la altura según tus necesidades */
   background-color: transparent;
   border-radius: 20px;
   display: flex;
@@ -35,7 +37,7 @@ const SlideImage = styled.img`
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
   }
 `;
 
@@ -62,10 +64,13 @@ const Carousel = () => {
     <CarouselContainer>
       <Slider {...settings}>
         <Slide>
-          <SlideImage src={Avatar2} alt="Stark Easy card" />
+          <SlideImage src={Heroe2} alt="Stark Easy card" />
         </Slide>
         <Slide>
-          <SlideImage src={Avatar2} alt="Stark Easy card" />
+          <SlideImage src={Heroe7} alt="Stark Easy card" />
+        </Slide>
+        <Slide>
+          <SlideImage src={Heroe6} alt="Stark Easy card" />
         </Slide>
         {/* ... otras diapositivas ... */}
       </Slider>
