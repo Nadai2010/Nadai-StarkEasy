@@ -4,7 +4,7 @@ import Button from "./Button";
 
 
 const Title = styled.h2`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxxl};
   text-transform: capitalize;
   width: 80%;
   color: ${(props) => props.theme.text};
@@ -31,11 +31,12 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h3`
-  font-size: ${(props) => props.theme.fontlg};
+  font-size: ${(props) => props.theme.fontxl};
   text-transform: capitalize;
   .text {
     color: ${(props) => props.theme.hoverColor};
   }
+
   font-weight: 600;
   margin-bottom: 1rem;
   width: 80%;
@@ -43,10 +44,11 @@ const SubTitle = styled.h3`
 
   @media (max-width: 48em) {
     align-self: center;
+    height: 15vh;
+    font-size: ${(props) => props.theme.fontlg};
     text-align: center;
   }
 
- 
   animation: appearAnimation 5.5s ease-in-out both;
 `;
 
@@ -57,6 +59,7 @@ const ButtonContainer = styled.div`
   @media (max-width: 48em) {
     align-self: center;
     text-align: center;
+    height: 0vh;
 
     button {
       margin: 0 auto;
