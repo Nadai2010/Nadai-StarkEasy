@@ -215,7 +215,7 @@ const About = () => {
             program, presented by Nadai & Nurstar.
           </SubTextLight>
           <ButtonContainer>
-            <Button text="Go on a Stark Adventure" link="/Adventure" />
+            <Button text="Go on a Stark Adventure" link="/connect" />
           </ButtonContainer>
         </Box>
       </Container>

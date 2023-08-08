@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom'; 
 
 interface ButtonProps {
   text: string;
@@ -44,9 +45,11 @@ const Btn = styled.button`
 
 const Button: React.FC<ButtonProps> = ({ text, link }) => {
   return (
-    <a href={link} aria-label={text} target="_blank" rel="noreferrer">
+    <Link to={link}>
       <Btn>{text}</Btn>
-    </a>
+    </Link>
   );
 };
+
+
 export default Button;

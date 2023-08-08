@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Section = styled.section`
   width: 100vw;
@@ -102,10 +103,12 @@ const Banner = () => {
   return (
     <Section>
       <Title>
-        {"sdfdsgv "}
+        {"Start the Adventure"}
       </Title>
       <BtnContainer>
+      <Link to="/connect">
         <JoinNow>Stark Easy</JoinNow>
+        </Link>
       </BtnContainer>
     </Section>
   );

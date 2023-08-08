@@ -16,6 +16,7 @@ import ComandosComponent from './components/Comandos';
 import StandarComponent from './components/Standar';
 import MulticallComponent from './components/Multicall';
 import UniversalComponent from './components/Universal';
+import Multicall2Component from './components/Multicall2';
 
 function App() {
   const { isConnected } = useAccount();
@@ -82,6 +83,11 @@ function App() {
                   Multicall
                 </Link>
               </li>
+              <li>
+                <Link to="/Multicall2" className="link">
+                  Multicall x100
+                </Link>
+              </li>
               <li className="ml-auto mr-4">
                 <SignForm />
               </li>
@@ -107,6 +113,7 @@ function App() {
                       <Route path="/Comandos" element={<ComandosPage />} />
                       <Route path="/Standar" element={<StandarPage />} />
                       <Route path="/Multicall" element={<MulticallPage />} />
+                      <Route path="/Multicall2" element={<Multicall2Page />} />
                       <Route path="/Universal" element={<UniversalPage />} />
                       <Route path="/" element={<Navigate to="/TokenForm" />} />
                     </>
@@ -162,6 +169,10 @@ function UniversalPage() {
 
 function MulticallPage() {
   return <MulticallComponent />;
+}
+
+function Multicall2Page() {
+  return <Multicall2Component />;
 }
 
 export default App;

@@ -171,7 +171,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card1} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Send Token" link="/Adventure" />
+            <Button text="Send Token" link="/connect" />
           </ButtonContainer>
         </Slide>
         <Slide>
@@ -185,7 +185,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card2} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Hablando de Starkent - POAP" link="/Adventure" />
+            <Button text="Hablando de Starkent - POAP" link="/connect" />
           </ButtonContainer>
         </Slide>
         <Slide>
@@ -198,7 +198,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card3} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Galery and Send NHT" link="/Adventure" />
+            <Button text="Galery and Send NHT" link="/connect" />
           </ButtonContainer>
         </Slide>
         <Slide>
@@ -208,7 +208,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card4} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Cairo's Thursday and Resource" link="/Adventure" />
+            <Button text="Cairo's Thursday and Resource" link="/connect" />
           </ButtonContainer>
         </Slide>
         <Slide>
@@ -219,7 +219,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card5} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Workshop and Basecamp PIONEROS" link="/Adventure" />
+            <Button text="Workshop and Basecamp PIONEROS" link="/connect" />
           </ButtonContainer>
         </Slide>
         <Slide>
@@ -233,7 +233,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card6} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Terminal Sintaxis in Cairo" link="/Adventure" />
+            <Button text="Terminal Sintaxis in Cairo" link="/connect" />
           </ButtonContainer>       
         </Slide>
         <Slide>
@@ -247,7 +247,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card7} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Standar Smart Contract in Starknet" link="/Adventure" />
+            <Button text="Standar Smart Contract in Starknet" link="/connect" />
           </ButtonContainer>  
         </Slide>
         <Slide>
@@ -261,7 +261,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card8} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Deploy Standar Smart Contract UDC" link="/Adventure" />
+            <Button text="Deploy Standar Smart Contract UDC" link="/connect" />
           </ButtonContainer> 
         </Slide>
         <Slide>
@@ -275,7 +275,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card9} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Multicall in Starknet" link="/Adventure" />
+            <Button text="Multicall in Starknet" link="/connect" />
           </ButtonContainer>
         </Slide>
         <Slide>
@@ -286,7 +286,7 @@ const TestYourSkills = () => {
         </SlideTitle3>
           <SlideImage src={Card10} alt="Stark Easy card" />
           <ButtonContainer>
-            <Button text="Super Power 100x Multicall in Starknet" link="/Adventure" />
+            <Button text="Super Power 100x Multicall in Starknet" link="/connect" />
           </ButtonContainer>
         </Slide>
         {/* ... otras diapositivas ... */}

@@ -1,4 +1,4 @@
-import{s as o,j as t}from"./index-6b954e60.js";const i=o.section`
+import{s as o,j as t,L as i}from"./index-3d025dbb.js";const n=o.section`
   width: 100vw;
   height: 25rem;
   position: relative;
@@ -17,7 +17,7 @@ import{s as o,j as t}from"./index-6b954e60.js";const i=o.section`
     height: 15rem;
     flex-direction: column;
   }
-`,n=o.h1`
+`,r=o.h1`
   font-size: ${e=>e.theme.fontxl};
   color: ${e=>e.theme.text};
   padding: 1rem 2rem;
@@ -38,7 +38,7 @@ import{s as o,j as t}from"./index-6b954e60.js";const i=o.section`
 
     width: 100%;
   }
-`,r=o.div`
+`,a=o.div`
   width: 35%;
   display: flex;
   justify-content: flex-end;
@@ -89,4 +89,4 @@ import{s as o,j as t}from"./index-6b954e60.js";const i=o.section`
     transform: translate(-50%, -50%) scale(1);
     padding: 0.3rem;
   }
-`,s=()=>t.jsxs(i,{children:[t.jsx(n,{children:"sdfdsgv "}),t.jsx(r,{children:t.jsx(d,{children:"Stark Easy"})})]});export{s as default};
+`,m=()=>t.jsxs(n,{children:[t.jsx(r,{children:"Start the Adventure"}),t.jsx(a,{children:t.jsx(i,{to:"/connect",children:t.jsx(d,{children:"Stark Easy"})})})]});export{m as default};

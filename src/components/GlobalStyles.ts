@@ -72,7 +72,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-body {
+  body {
     font-family: 'teko', sans-serif;
     overflow-x: hidden;
     background-image: url('src/assets/Portada12.jpg');
@@ -81,6 +81,12 @@ body {
     background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Cambiar el tamaño del fondo */
+        background-attachment: scroll; /* Cambiar la forma en que se adjunta el fondo */
+    }
+}
   
   
   h1, h2, h3, h4, h5, h6 {
