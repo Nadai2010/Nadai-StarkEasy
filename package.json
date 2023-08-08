@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@argent/get-starknet": "^6.4.6",
     "@chakra-ui/react": "^2.7.1",
     "@ethersproject/bignumber": "^5.7.0",
     "@fontsource/teko": "^4.5.0",

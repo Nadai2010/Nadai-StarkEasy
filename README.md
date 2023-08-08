@@ -86,3 +86,133 @@ We are working on hash functions for message signing. In the "Sign a message" se
 We will also begin working on additional sections and learning ideas. It will display the current block of the Gorli network or the connected network, the transactions in that block provided by the provider, and a calculation showing the transactions per second (TPS) loaded in that block. It will also sometimes detect your Starknet ID.
 
 --------
+import { useNavigate } from 'react-router-dom';
+import { useConnectors } from "@starknet-react/core";
+import styled from 'styled-components';
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+`;
+
+const FormTitle = styled.h2`
+  font-size: 2em;
+  margin-bottom: 0rem;
+  color: grey;
+`;
+
+const FormTitle2 = styled.h2`
+  font-size: 3em;
+  margin-bottom: 3rem;
+  color: #000000;
+`;
+
+const StyledConnectButton = styled.button`
+  /* Estilos para el botón */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 2em;
+  font-family: 'teko', sans-serif;
+  outline: none;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  margin: 0 1rem;
+
+  &:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 2px solid #000000;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+    border-color: #000000;
+  }
+
+  &:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    padding: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+    padding: 1.5rem 3rem;
+    margin: 1rem 0 0;
+  }
+  
+  img {
+    width: 30px; /* Ajusta el tamaño de la imagen según lo necesites */
+    margin-right: 1rem;
+  }
+`;
+
+const ConnectContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+export default function Connect() {
+  const { connect } = useConnectors();
+  const navigate = useNavigate();
+
+  const connectorsWithImages = [
+    {
+      id: 'Argent',
+      available: () => true,
+      image: 'src/assets/Argent.png'
+    },
+    {
+      id: 'Braavos',
+      available: () => true,
+      image: 'src/assets/Braavos.png'
+    }
+  ];
+
+  const handleConnect = async (connectorId:any) => {
+    // Lógica de conexión con el conector
+    await connect(connectorId);
+    navigate('/TokenForm');
+  };
+
+  return (
+    <ConnectContainer>
+      <StyledForm>
+        <FormTitle>Connect to:</FormTitle>
+        <FormTitle2>Stark Easy</FormTitle2>
+        {connectorsWithImages.map((connector) => (
+          <StyledConnectButton
+            onClick={() => handleConnect(connector.id)}
+            key={connector.id}
+            disabled={!connector.available()}
+          >
+            <img src={connector.image} alt={connector.id} />
+            Connect {connector.id}
+          </StyledConnectButton>
+        ))}
+      </StyledForm>
+    </ConnectContainer>
+  );
+}
