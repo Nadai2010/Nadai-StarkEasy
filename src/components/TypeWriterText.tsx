@@ -102,3 +102,5 @@ const TypeWriterText = () => {
 };
 
 export default TypeWriterText;
+
+
