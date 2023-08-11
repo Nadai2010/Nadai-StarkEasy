@@ -160,21 +160,23 @@ const TestYourSkills = () => {
     <CarouselContainer>
       <SlideTitle>Stark Easy</SlideTitle>
       <Slider {...settings}>
+        
         <Slide>
+        <SlideImage src={Card1} alt="Stark Easy card" />
         <SlideTitle3>
-        A form that detects the balance of the added tokens. A test token called NAI has been deployed on Cairo 1 
+        A form that detects the balance of the selected tokens. A test token called NAI has been deployed on Cairo 1 
         (which allows free token minting), as well as tokens such as ETH, DAI, WBTC, or USDT. In the form, 
         you need to enter the Recipient, Amount, and a secret word "Nadai" to unlock the `Send` button.
         <br/><br/>
         In this section, we aim to showcase the power of customizing ERC-20 token transfers. You can view the 
         transaction data (`Calldata`) and see how it is executed in the explorer.
         </SlideTitle3>
-          <SlideImage src={Card1} alt="Stark Easy card" />
           <ButtonContainer>
             <Button text="Send Token" link="/connect" />
           </ButtonContainer>
         </Slide>
         <Slide>
+        <SlideImage src={Card2} alt="Stark Easy card" />
         <SlideTitle3>
         In this section we want to improve the experience of the community around the biweekly "Hablando de Starknet"
         Spanish-speaking show. Here we want to issue our POAPs under the form of NFTs on Starknet, where the secret word 
@@ -182,13 +184,14 @@ const TestYourSkills = () => {
         <br/><br/>
         Therefore, in this section, you can learn about Starknet while being able to claim your "NHT" tokens with the 
         secret word mentioned in the podcast. Furthermore, these `NHT` tokens will be displayed on "Braavos", "Explorer" and more.
-        </SlideTitle3>
-          <SlideImage src={Card2} alt="Stark Easy card" />
+        </SlideTitle3>          
           <ButtonContainer>
             <Button text="Hablando de Starkent - POAP" link="/connect" />
           </ButtonContainer>
         </Slide>
+       
         <Slide>
+        <SlideImage src={Card3} alt="Stark Easy card" />
         <SlideTitle3>    
         A design gallery for each HDS-related ERC-721 token, loading the metadata of each space. You can also send a token by 
         providing the "From", "Recipient", and "Token ID" values along with the secret word to unlock the "Nadai" button.
@@ -196,33 +199,36 @@ const TestYourSkills = () => {
         In this section, we reinforce what was seen in the token form. This time, we will see how the design is visualized in the 
         transaction, the transaction data "Calldata", and how to easily transfer our POAP tokens.
         </SlideTitle3>
-          <SlideImage src={Card3} alt="Stark Easy card" />
           <ButtonContainer>
             <Button text="Galery and Send NHT" link="/connect" />
           </ButtonContainer>
         </Slide>
+
         <Slide>
+        <SlideImage src={Card4} alt="Stark Easy card" />
         <SlideTitle3>    
         This tab is dedicated to "Jueves de Cairo" which are "Cairo-Thursdays" organized by the Spanish-speaking 
         community. We will also add official resources such as the Cairo Book, Starknet Book, Cairo Lang Docs, and Starknet Docs.
-        </SlideTitle3>
-          <SlideImage src={Card4} alt="Stark Easy card" />
+        </SlideTitle3>          
           <ButtonContainer>
             <Button text="Cairo's Thursday and Resource" link="/connect" />
           </ButtonContainer>
         </Slide>
+
         <Slide>
+        <SlideImage src={Card5} alt="Stark Easy card" />
         <SlideTitle3>    
         This tab is dedicated to the "Basecamp de Pioneros" the first decentralized basecamp for the Spanish-speaking community 
         powered by Starkware and led by some members of the community. You can also find a series of 7 workshops conducted by 
         L2 en Español, featuring Omar Espejel and StarknetEs.
-        </SlideTitle3>
-          <SlideImage src={Card5} alt="Stark Easy card" />
+        </SlideTitle3>         
           <ButtonContainer>
             <Button text="Workshop and Basecamp PIONEROS" link="/connect" />
           </ButtonContainer>
         </Slide>
+
         <Slide>
+        <SlideImage src={Card6} alt="Stark Easy card" />
         <SlideTitle3>    
         This tab is designed for learning the Cairo syntax. The idea is to add the new syntax and have a simulation of the result 
         printed in the terminal by running the appropriate command.
@@ -230,27 +236,29 @@ const TestYourSkills = () => {
         In this section, you can enhance learning with basic examples taken from Cairo-by-Example, Cairo-Book, Starknet-Book, or 
         other libraries and resources. The goal is to read the code or contracts directly and test them without simulation, 
         making it easier to learn the syntax through clear examples.
-        </SlideTitle3>
-          <SlideImage src={Card6} alt="Stark Easy card" />
+        </SlideTitle3>      
           <ButtonContainer>
             <Button text="Terminal Sintaxis in Cairo" link="/connect" />
           </ButtonContainer>       
         </Slide>
+
         <Slide>
+        <SlideImage src={Card7} alt="Stark Easy card" />
         <SlideTitle3>    
-        This tab will teach the power of native Multicall in Cairo. In this form, you can "Mint" the "NAI" token and transfer both 
+        This tab will teach you you the power of native Multicall in Cairo. In this form, you can "Mint" the "NAI" token and transfer both 
         "NAI" and "ETH" if desired, by executing 3 different calls, each with its own set of data "Calldata".
         <br/><br/>
         In this section, we can demonstrate how infinite approvals are no longer needed and how DeFi protocols in Starknet benefit 
         from this power. The idea is to add various Multicall forms, including one for UDC, and provide an easy way for developers 
         to deploy ERC-20, ERC-1155, AMM, Vault, or any other smart contract in Cairo that we want to include.
-        </SlideTitle3>
-          <SlideImage src={Card7} alt="Stark Easy card" />
+        </SlideTitle3>         
           <ButtonContainer>
             <Button text="Standar Smart Contract in Starknet" link="/connect" />
           </ButtonContainer>  
         </Slide>
+
         <Slide>
+        <SlideImage src={Card8} alt="Stark Easy card" />
         <SlideTitle3>    
         This tab is designed to display contracts with just one click, using Starknet's Universal Contract Deploy (UDC) making 
         it easy, practical, and secure for all those who want to start testing in a simple way. You only need to decide what 
@@ -258,36 +266,38 @@ const TestYourSkills = () => {
         <br/><br/>
         Additionally, we will provide the necessary steps to convert the values to felt252, along with an explanation and 
         utility of each one.
-        </SlideTitle3>
-          <SlideImage src={Card8} alt="Stark Easy card" />
+        </SlideTitle3>          
           <ButtonContainer>
             <Button text="Deploy Standar Smart Contract UDC" link="/connect" />
           </ButtonContainer> 
         </Slide>
+
         <Slide>
+        <SlideImage src={Card9} alt="Stark Easy card" />
         <SlideTitle3>    
-        This tab will teach the power of native Multicall in Cairo. In this form, you can Mint the NAI token and transfer 
+        This tab will teach you you the power of native Multicall in Cairo. In this form, you can Mint the NAI token and transfer 
         both NAI and ETH if desired, by executing 3 different calls, each with its own set of data "Calldata".
         <br/><br/>
         In this section, we can demonstrate how infinite approvals are no longer needed and how DeFi protocols in Starknet 
         benefit from this power. The idea is to add various Multicall forms, including one for UDC, and provide an easy way 
         for developers to deploy ERC-20, ERC-1155, AMM, Vault, or any other smart contract in Cairo that we want to include.
-        </SlideTitle3>
-          <SlideImage src={Card9} alt="Stark Easy card" />
+        </SlideTitle3>         
           <ButtonContainer>
-            <Button text="Multicall in Starknet" link="/connect" />
+            <Button text="Multicall in Starknet (Part 1-2)" link="/connect" />
           </ButtonContainer>
         </Slide>
+
         <Slide>
+        <SlideImage src={Card10} alt="Stark Easy card" />
         <SlideTitle3>    
-        This tab will teach the power of native Multicall in Cairo. In this form, you can Mint the NAI token x100, by 
+        This tab will teach you you the power of native Multicall in Cairo. In this form, you can Mint the NAI token x100, by 
         executing 1 only call, each with its own set of data "Calldata".
         <br/><br/>
-        </SlideTitle3>
-          <SlideImage src={Card10} alt="Stark Easy card" />
+        </SlideTitle3>          
           <ButtonContainer>
-            <Button text="Super Power 100x Multicall in Starknet" link="/connect" />
+            <Button text="Multicall in Starknet (Part 2-2)" link="/connect" />
           </ButtonContainer>
+          
         </Slide>
         {/* ... otras diapositivas ... */}
       </Slider>

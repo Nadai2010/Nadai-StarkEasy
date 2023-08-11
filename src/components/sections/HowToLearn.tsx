@@ -155,7 +155,7 @@ const HowToLearn = () => {
             <SubTitle>Play</SubTitle>
             <Text>
               In this section of StarkEasy, you’ll be able to play mini-educational games which are part of a very special Starknet Adventure, 
-              where you will feel like a Martial Arts apprentice ready to embark themselves on a journey to get your Starknet belts while 
+              where you will feel like a Martial Arts apprentice ready to embark yourself on a journey to get your Starknet belts while 
               defeating dangerous enemies in the process. Creative characters and landscapes will enhance your gaming experience as you’ll try 
               your best to rank high in the Leaderboard!
             </Text>
