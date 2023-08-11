@@ -75,7 +75,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'teko', sans-serif;
     overflow-x: hidden;
-    background-image: url('src/assets/Portada12.jpg');
+    background-image: url('../src/assets/Portada12.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;

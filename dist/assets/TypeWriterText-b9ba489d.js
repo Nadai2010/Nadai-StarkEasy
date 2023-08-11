@@ -1,4 +1,4 @@
-import{s as a,j as e,T as n,B as s}from"./index-c9477da8.js";const i=a.h2`
+import{s as a,j as e,T as n,B as s}from"./index-b6578dcc.js";const i=a.h2`
   font-size: ${t=>t.theme.fontxxxl};
   text-transform: capitalize;
   width: 80%;

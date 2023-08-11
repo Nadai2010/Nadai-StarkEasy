@@ -186,25 +186,25 @@ const StarkAdventure = () => {
               height={160}
               onClick={() => handleCardClick(<Level1 />)}
             >
-              <img src="src/assets/CardLevel1_1.png" alt="Image description" />
+              <img src="../src/assets/CardLevel1_1.png" alt="Image description" />
             </Card>
             <Card2
               height={160}
               onClick={() => handleCardClick(<About />)}
             >
-              <img src="src/assets/CardLevel1.png" alt="Image description" />
+              <img src="../src/assets/CardLevel1.png" alt="Image description" />
             </Card2>
             <Card3
               height={250}
               onClick={() => handleCardClick(<About />)}
             >
-              <img src="src/assets/CardLevel1_2.png" alt="Image description" />
+              <img src="../src/assets/CardLevel1_2.png" alt="Image description" />
             </Card3>
             <Card4
               height={190}
               onClick={() => handleCardClick(<About />)}
             >
-              <img src="src/assets/CardLevel1_3.png" alt="Image description" />
+              <img src="../src/assets/CardLevel1_3.png" alt="Image description" />
             </Card4>
             {/* Agrega más tarjetas aquí con diferentes posiciones */}
           </CardContainer>
