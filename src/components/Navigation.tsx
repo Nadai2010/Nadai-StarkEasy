@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import logoImage from '../assets/Logo.png'; 
 
 const Section = styled.section``;
 
@@ -88,7 +89,8 @@ const LogoContainer = styled.div`
   }
 `;
 
-const LogoImage = styled.img`
+
+const LogoImageStyled = styled.img`
   width: 140px;
   height: 140px;
   transition: transform 0.3s ease-in-out;
@@ -128,13 +130,13 @@ const Navigation = () => {
 
       setIsMenuOpen(false);
     }
-  };
+  }; 
 
   return (
     <Section id="navigation">
       <NavBar>
         <LogoContainer onClick={handleLogoClick}>
-          <LogoImage src="/src/assets/Logo.png" alt="Logo" />
+        <LogoImageStyled src={logoImage} alt="Logo" />
         </LogoContainer>
         <Menu style={{ display: isMenuOpen ? 'flex' : 'none' }}>
           <MenuItem onClick={handleHomeClick}>CONNECT</MenuItem>
