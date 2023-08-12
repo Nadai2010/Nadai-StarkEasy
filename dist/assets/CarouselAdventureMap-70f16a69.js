@@ -1,4 +1,4 @@
-import{s,j as e}from"./index-537d0641.js";const t="/assets/MapLevel1-b61a513e.png",a=s.div`
+import{s as t,j as s,S as e}from"./index-7fe03605.js";const r=t.div`
   width: 100%;
 
   img {
@@ -10,4 +10,4 @@ import{s,j as e}from"./index-537d0641.js";const t="/assets/MapLevel1-b61a513e.pn
   @media (max-width: 64em) {
     min-width: 40vh;
   }
-`,i=()=>e.jsx(a,{children:e.jsx("img",{src:t,alt:"Stark Easy Cover"})});export{i as default};
+`,i=()=>s.jsx(r,{children:s.jsx("img",{src:e,alt:"Stark Easy Cover"})});export{i as default};

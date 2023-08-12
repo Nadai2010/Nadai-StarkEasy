@@ -4,6 +4,10 @@ import Loading from "../Loading";
 import About from "./StarkEasy";
 import Level1 from "../level1/Level1";
 import ReactModal from "react-modal";
+import CardLevel from "/src/assets/CardLevel1_1.png";
+import CardLevel1 from "/src/assets/CardLevel1_1.png";
+import CardLevel2 from "/src/assets/CardLevel1_2.png";
+import CardLevel3 from "/src/assets/CardLevel1_3.png";
 
 const CarouselAdventureMap = lazy(() => import("../CarouselAdventureMap"));
 
@@ -186,25 +190,25 @@ const StarkAdventure = () => {
               height={160}
               onClick={() => handleCardClick(<Level1 />)}
             >
-              <img src="../src/assets/CardLevel1_1.png" alt="Image description" />
+              <img src={CardLevel}/>
             </Card>
             <Card2
               height={160}
               onClick={() => handleCardClick(<About />)}
             >
-              <img src="../src/assets/CardLevel1.png" alt="Image description" />
+              <img src={CardLevel1} alt="Image description" />
             </Card2>
             <Card3
               height={250}
               onClick={() => handleCardClick(<About />)}
             >
-              <img src="../src/assets/CardLevel1_2.png" alt="Image description" />
+              <img src={CardLevel2} alt="Image description" />
             </Card3>
             <Card4
               height={190}
               onClick={() => handleCardClick(<About />)}
             >
-              <img src="../src/assets/CardLevel1_3.png" alt="Image description" />
+              <img src={CardLevel3} alt="Image description" />
             </Card4>
             {/* Agrega más tarjetas aquí con diferentes posiciones */}
           </CardContainer>

@@ -32,12 +32,12 @@ const Container = styled.div`
     flex-direction: column;
 
     & > *:last-child {
-      width: 80%;
+      width: 100%;
     }
   }
   @media (max-width: 40em) {
     & > *:last-child {
-      width: 90%;
+      width: 100%;
     }
   }
 `;

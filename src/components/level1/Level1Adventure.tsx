@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import backgroundImg from "/src/assets/MapLevel1.png"; // Asegúrate de proporcionar la ruta correcta a la imagen de fondo
+
 const Section = styled.section`
   min-height: 100vh;
   width: 100%;
@@ -16,11 +18,10 @@ const BackgroundImage = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/MapLevel1.png'); /* Cambiar 'background.jpg' por la URL de la imagen */
+  background-image: url(${backgroundImg}); /* Utiliza la importación para la URL de la imagen */
   background-size: cover;
   background-position: center;
   filter: blur(px); /* Opcional: Aplicar un efecto de desenfoque a la imagen de fondo */
-
 `;
 
 const Container = styled.div`

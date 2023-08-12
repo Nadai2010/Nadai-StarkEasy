@@ -47,6 +47,7 @@ const Title = styled.h1`
 const BtnContainer = styled.div`
   width: 35%;
   display: flex;
+  
   justify-content: flex-end;
 
   @media (max-width: 48em) {
@@ -57,8 +58,8 @@ const BtnContainer = styled.div`
 
 const JoinNow = styled.button`
   display: inline-block;
-  background-color: ${(props) => props.theme.body};
-  color: ${(props) => props.theme.hoverColor};
+  background-color: #d81f3f;
+  color: white;
   outline: none;
   border: none;
   font-weight: 600;
@@ -86,7 +87,7 @@ const JoinNow = styled.button`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid ${(props) => props.theme.body};
+    border: 2px solid #d81f3f;
     width: 100%;
     height: 100%;
     border-radius: 50px;

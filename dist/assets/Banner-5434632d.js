@@ -1,4 +1,4 @@
-import{s as o,j as t,L as i}from"./index-537d0641.js";const n=o.section`
+import{s as i,j as t,L as n}from"./index-7fe03605.js";const o=i.section`
   width: 100vw;
   height: 25rem;
   position: relative;
@@ -17,7 +17,7 @@ import{s as o,j as t,L as i}from"./index-537d0641.js";const n=o.section`
     height: 15rem;
     flex-direction: column;
   }
-`,r=o.h1`
+`,r=i.h1`
   font-size: ${e=>e.theme.fontxl};
   color: ${e=>e.theme.text};
   padding: 1rem 2rem;
@@ -38,19 +38,20 @@ import{s as o,j as t,L as i}from"./index-537d0641.js";const n=o.section`
 
     width: 100%;
   }
-`,a=o.div`
+`,a=i.div`
   width: 35%;
   display: flex;
+  
   justify-content: flex-end;
 
   @media (max-width: 48em) {
     width: 100%;
     justify-content: center;
   }
-`,d=o.button`
+`,d=i.button`
   display: inline-block;
-  background-color: ${e=>e.theme.body};
-  color: ${e=>e.theme.hoverColor};
+  background-color: #d81f3f;
+  color: white;
   outline: none;
   border: none;
   font-weight: 600;
@@ -78,7 +79,7 @@ import{s as o,j as t,L as i}from"./index-537d0641.js";const n=o.section`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid ${e=>e.theme.body};
+    border: 2px solid #d81f3f;
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -89,4 +90,4 @@ import{s as o,j as t,L as i}from"./index-537d0641.js";const n=o.section`
     transform: translate(-50%, -50%) scale(1);
     padding: 0.3rem;
   }
-`,m=()=>t.jsxs(n,{children:[t.jsx(r,{children:"Start the Adventure"}),t.jsx(a,{children:t.jsx(i,{to:"/connect",children:t.jsx(d,{children:"Stark Easy"})})})]});export{m as default};
+`,m=()=>t.jsxs(o,{children:[t.jsx(r,{children:"Start the Adventure"}),t.jsx(a,{children:t.jsx(n,{to:"/connect",children:t.jsx(d,{children:"Stark Easy"})})})]});export{m as default};

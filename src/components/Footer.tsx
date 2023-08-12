@@ -98,6 +98,7 @@ const Bottom = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: ${(props) => props.theme.fontmd};
+  
 
   a {
     text-decoration: underline;

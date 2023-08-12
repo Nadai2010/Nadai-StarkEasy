@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import "@fontsource/teko";
+import backgroundImage from '../assets/Portada12.jpg'; // Ajusta la ruta de importación según la ubicación de tu imagen
+
 
 const GlobalStyles = createGlobalStyle`
   /* Estilos globales para el componente Navigation */
@@ -77,16 +79,16 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'teko', sans-serif;
     overflow-x: hidden;
-    background-image: url('../src/assets/Portada12.jpg');
-    background-size: cover; 
+    background-image: url(${backgroundImage});
+    background-size: 100% 100%;; 
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 @media (max-width: 768px) {
     body {
-        background-size: contain; /* Cambiar el tamaño del fondo */
-        background-attachment: scroll; /* Cambiar la forma en que se adjunta el fondo */
+        background-size: 100% 100%; /* Cambiar el tamaño del fondo */
+        background-attachment: fixed; /* Cambiar la forma en que se adjunta el fondo */
     }
 }
   
