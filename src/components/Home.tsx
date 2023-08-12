@@ -3,11 +3,11 @@ import { starkeasy } from './Themes';
 import { ThemeProvider } from 'styled-components';
 
 import Navigation from "./Navigation";
-import About from "./sections/About";
+import StarkEasy from "./sections/StarkEasy";
 import Inicio from "./sections/Inicio";
-import HowToLearn from "./sections/HowToLearn";
+import StarkJitsu from "./sections/StarkJitsu";
 import Footer from "./Footer";
-import TestYourSkills from "./sections/Testyourskills";
+import StarkDevStation from "./sections/StarkDevStation";
 import Faq from "./sections/Faq";
 import ScrollToTop from "./ScrollToTop";
 
@@ -18,9 +18,9 @@ function Home() {
       <ThemeProvider theme={starkeasy}>
         <Navigation />
         <Inicio />
-        <About />
-        <HowToLearn />
-        <TestYourSkills />
+        <StarkEasy />
+        <StarkJitsu />
+        <StarkDevStation />
         <Faq />
         <Footer />
         <ScrollToTop />

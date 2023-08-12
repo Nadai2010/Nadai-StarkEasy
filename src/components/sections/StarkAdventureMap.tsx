@@ -1,7 +1,7 @@
 import { useState, lazy, Suspense } from "react";
 import styled from "styled-components";
 import Loading from "../Loading";
-import About from "./About";
+import About from "./StarkEasy";
 import Level1 from "../level1/Level1";
 import ReactModal from "react-modal";
 

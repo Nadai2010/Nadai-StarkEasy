@@ -15,7 +15,7 @@ const Title = styled.h2`
     
   }
   .text {
-    color: ${(props) => props.theme.hoverColor};
+    color: #d81f3f;
   }
 
   @media (max-width: 70em) {

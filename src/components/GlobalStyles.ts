@@ -29,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
     margin: 0 1rem;
     color: #000000; /* Coloca el color del texto que desees */
     cursor: pointer;
+    align-items: center;
+    text-align: center;
   }
   
   li::after {

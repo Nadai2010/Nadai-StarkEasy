@@ -6,8 +6,8 @@ import Loading from "../Loading";
 
 const Section = styled.section`
   min-height: 100vh;
-  width: 100%;
-  background-color: ${(props) => props.theme.altBackground};
+  width: 110%;
+  background-color: #d81f3f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,9 +186,9 @@ const ButtonContainer = styled.div`
 `;
 
 
-const About = () => {
+const StarkEasy = () => {
   return (
-    <Section id="about">
+    <Section id="starkeasy">
       <Container>
         <Box>
           <Suspense fallback={<Loading />}>
@@ -223,4 +223,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default StarkEasy;

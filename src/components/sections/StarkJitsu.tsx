@@ -111,10 +111,10 @@ const TextContainer = styled.div`
   text-align: center;
 `;
 
-const HowToLearn = () => {
+const StarkJitsu = () => {
   return (
-    <Section id="howtolearn">
-      <Title>How to LEARN!</Title>
+    <Section id="starkjitsu">
+      <Title>Stark Jitsu!</Title>
       <Container>
         <InnerContainer>
           <TextContainer>
@@ -174,4 +174,4 @@ const HowToLearn = () => {
   );
 };
 
-export default HowToLearn;
+export default StarkJitsu;

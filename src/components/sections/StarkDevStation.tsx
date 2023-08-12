@@ -21,7 +21,7 @@ const CarouselContainer = styled.div`
   height: 110vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #ffffff 0%, #fbb03b 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #d81f3f 100%);
 
   @media (max-width: 40em) {
     height: 90vh; /* Altura reducida en dispositivos móviles */
@@ -142,6 +142,16 @@ const ButtonContainer = styled.div`
   }
 `;
 
+const Section = styled.section`
+  min-height: 100vh;
+  width: 100vw;
+  background-color: ${(props) => props.theme.body};
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+`;
 
 const TestYourSkills = () => {
   const settings = {
@@ -157,8 +167,9 @@ const TestYourSkills = () => {
   };
 
   return (
+    <Section id="starkdevstation">
     <CarouselContainer>
-      <SlideTitle>Stark Easy</SlideTitle>
+      <SlideTitle>Stark Dev-Station</SlideTitle>
       <Slider {...settings}>
         
         <Slide>
@@ -305,6 +316,7 @@ const TestYourSkills = () => {
         <Slider {...settings} />
       </DotsContainer>
     </CarouselContainer>
+    </Section>
   );
 };
 

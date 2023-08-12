@@ -1,4 +1,4 @@
-import{s as a,j as e,T as n,B as s}from"./index-fb37b949.js";const i=a.h2`
+import{s as a,j as e,T as n,B as s}from"./index-3b404c59.js";const i=a.h2`
   font-size: ${t=>t.theme.fontxxxl};
   text-transform: capitalize;
   width: 80%;
@@ -10,7 +10,7 @@ import{s as a,j as e,T as n,B as s}from"./index-fb37b949.js";const i=a.h2`
     
   }
   .text {
-    color: ${t=>t.theme.hoverColor};
+    color: #d81f3f;
   }
 
   @media (max-width: 70em) {
@@ -43,7 +43,7 @@ import{s as a,j as e,T as n,B as s}from"./index-fb37b949.js";const i=a.h2`
   }
 
   animation: appearAnimation 5.5s ease-in-out both;
-`,o=a.div`
+`,l=a.div`
   width: 80%;
   align-self: flex-start;
 
@@ -56,4 +56,4 @@ import{s as a,j as e,T as n,B as s}from"./index-fb37b949.js";const i=a.h2`
       margin: 0 auto;
     }
   }
-`,m=()=>e.jsxs(e.Fragment,{children:[e.jsxs(i,{children:["STARK Easy",e.jsx(n,{options:{autoStart:!0,loop:!0},onInit:t=>{t.typeString('<span class="text">Learn!</span>').pauseFor(1e3).deleteAll().typeString('<span class="text">Play!</span>').pauseFor(1e3).deleteAll().typeString('<span class="text">Test your skills!</span>').pauseFor(1e3).deleteAll().start()}})]}),e.jsx(r,{children:"Your Starknet Academy"}),e.jsx(o,{children:e.jsx(s,{text:"Start the Adventure",link:"/connect"})})]});export{m as default};
+`,x=()=>e.jsxs(e.Fragment,{children:[e.jsxs(i,{children:["STARK Easy",e.jsx(n,{options:{autoStart:!0,loop:!0},onInit:t=>{t.typeString('<span class="text">Learn!</span>').pauseFor(1e3).deleteAll().typeString('<span class="text">Play!</span>').pauseFor(1e3).deleteAll().typeString('<span class="text">Test your skills!</span>').pauseFor(1e3).deleteAll().start()}})]}),e.jsx(r,{children:"Your Starknet Academy"}),e.jsx(l,{children:e.jsx(s,{text:"Start the Adventure",link:"/connect"})})]});export{x as default};
