@@ -100,7 +100,7 @@ const Level1Learn = () => {
 
       <VideoBox>
         <VideoWrapper>
-          <Video videoId="4e9U75b6nE8" opts={opts} />
+          <Video videoId="pKNd7f7EIiU" opts={opts} />
         </VideoWrapper>
       </VideoBox>
 
@@ -131,10 +131,7 @@ const Level1Learn = () => {
             Nadai y Nurst
         </Title>
           <Description>
-            Que buena opinión de Nurst sobre el ecosistema, y la tecnologia, en estas palabras nos guía sobre como cambiar la técnologia. ¿Recuerdas de que zona del Mundo se trataba? No... Pues escucha de nuevo el episodio si quieres superar las siguientes pruebas
-            Que buena opinión de Nurst sobre el ecosistema, y la tecnologia, en estas palabras nos guía sobre como cambiar la técnologia. ¿Recuerdas de que zona del Mundo se trataba? No... Pues escucha de nuevo el episodio si quieres superar las siguientes pruebas
-            Que buena opinión de Nurst sobre el ecosistema, y la tecnologia, en estas palabras nos guía sobre como cambiar la técnologia. ¿Recuerdas de que zona del Mundo se trataba? No... Pues escucha de nuevo el episodio si quieres superar las siguientes pruebas
-            Que buena opinión de Nurst sobre el ecosistema, y la tecnologia, en estas palabras nos guía sobre como cambiar la técnologia. ¿Recuerdas de que zona del Mundo se trataba? No... Pues escucha de nuevo el episodio si quieres superar las siguientes pruebas
+          In this first lesson, you will learn the basics of Blockchain, Crypto and Web3 by watching this video by Nurstar, one of the Senseis of the Stark-Jitsu Academy. 
           </Description>
         </Card>
       </TextContainer>

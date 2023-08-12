@@ -6,6 +6,7 @@ import { parseFixed } from "@ethersproject/bignumber";
 import "./TokenForm.css";
 import NetworkInfo from "./NetworkInfo";
 
+
 // Array de tokens ERC20
 const tokens = [
   {

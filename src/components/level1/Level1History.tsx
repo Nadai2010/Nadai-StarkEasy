@@ -93,7 +93,7 @@ const Box1 = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxl};
   text-transform: capitalize;
   color: ${(props) => props.theme.body};
   align-self: flex-start;
@@ -145,7 +145,7 @@ const SubText = styled.p`
 `;
 
 const SubText2 = styled.p`
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   align-self: flex-start;
   width: 90%;
@@ -193,19 +193,15 @@ const Level1History = () => {
           </SubText2>
           <SubText>
            Get ready to embark on a martial arts adventure like no other. In this adventure, you will put yourself in the shoes of young students moving their first steps in the famous Martial Arts Academy of Starknetia, the StarkJitsu School.
+           <br/>
+           <br/>
            A lot of tough but inspiring challenging adventures are waiting for you. However, dear StarkJitsu students, the road to mastery is not easy. 
+           <br/>
+           <br/>
           In your relentless pursuit for greatness, you will face several challenges that will test your strength, your agility and your inner soul. 
+          <br/>
+          <br/>
           Get ready for an intense training program guided by the legendary “Stark Senseis”, experienced teachers renowned for their mastery of the Stark-arts. With their advice, you will push your limits to become a StarkSenshi, a wise and powerful Fighter of Starknetia. 
-            Eliumi and Uriechi, the old wise twins known as “The founding Fathers of Starknetia”, legendary fighters and masters, have an important message for you: 
-            <br/>
-            <br/>
-          Dear StarkJitsu Students, you are the future of Starknetia!
-          Today is your first day at the StarkJitsu school and we want to wish you a good learning experience. 
-          During this adventure, accept every challenge as an opportunity to discover your inner strength and unleash your true potential as a Stark-Senshi.
-          Many lessons are ahead of you, be continuous and follow the 
-          Founding principle of Starknetia, Integrity!
-          Believe in yourself, you are the future of Starknetia!
-
           </SubText>
         </Box>
         

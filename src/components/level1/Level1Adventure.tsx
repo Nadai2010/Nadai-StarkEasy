@@ -42,10 +42,11 @@ const Card = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: ${(props) => props.theme.fontxxl};
+  font-size: ${(props) => props.theme.fontxl};
   text-transform: capitalize;
-  color: ${(props) => props.theme.body};
+  color: black;
   margin-bottom: 10px;
+  text-align: center;
 `;
 
 const SubText = styled.p`
@@ -57,7 +58,7 @@ const SubText = styled.p`
 const SubText2 = styled.p`
   font-size: ${(props) => props.theme.fontxl};
   color: ${(props) => props.theme.customColor};
-  font-weight: 600;
+  font-weight: 600px;
   margin-bottom: 20px;
 `;
 
@@ -72,19 +73,25 @@ const Level1Adventure = () => {
       <BackgroundImage />
       <Container>
         <Card>
-          <Title>Introducing Stark Easy</Title>
-          <SubText2>Your Learning dApp to learn about Starknet!</SubText2>
+          <Title>Eliumi and Uriechi, the old wise twins known as “The founding Fathers of Starknetia”</Title>
+          <SubText2>Legendary fighters and masters, have an important message for you: </SubText2>
           <SubText>
-            Are you eager to learn about Starknet, its cutting-edge technology and its
-            fast-growing ecosystem but you find the complexities a bit overwhelming?
-            Look no further! We are thrilled to present "Stark Easy" - a revolutionary
-            learning dApp and Portal designed to make your journey into Starknet both
-            enjoyable and straightforward.
-          </SubText>
+           </SubText>
           <SubTextLight>
-            Furthermore, there will also be a dedicated learning path for Spanish speakers,
-            Hablando De Starknet, which will also incorporate the existing HDS Spanish-speaking
-            program, presented by Nadai & Nurstar.
+          Dear StarkJitsu Students, you are the future of Starknetia!
+          <br/>
+          <br/>
+          
+Today is your first day at the StarkJitsu school and we want to wish you a good learning experience.         
+During this adventure, accept every challenge as an opportunity to discover your inner strength and unleash your true potential as a Stark-Senshi.
+<br/>
+           <br/>
+         Many lessons are ahead of you, be continuous and follow the 
+         Founding principle of Starknetia, Integrity!
+         <br/>
+           <br/>
+        Believe in yourself, you are the future of Starknetia!
+
           </SubTextLight>
         </Card>
       </Container>
