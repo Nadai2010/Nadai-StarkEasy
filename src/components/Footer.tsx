@@ -156,9 +156,9 @@ const Footer = () => {
         </Left>
         <MenuItems>
           <Item onClick={() => scrollTo("home")}>Home</Item>
-          <Item onClick={() => scrollTo("about")}>About</Item>
-          <Item onClick={() => scrollTo("howtoplay")}>How To Play</Item>
-          <Item onClick={() => scrollTo("community")}>Community</Item>
+          <Item onClick={() => scrollTo("starkeasy")}>Stark Easy</Item>
+          <Item onClick={() => scrollTo("starkjitsu")}>Stark Jitsu</Item>
+          <Item onClick={() => scrollTo("starkdevstation")}>Stark Dev-Station</Item>
           <Item onClick={() => scrollTo("faq")}>Faq</Item>
         </MenuItems>
       </Container>

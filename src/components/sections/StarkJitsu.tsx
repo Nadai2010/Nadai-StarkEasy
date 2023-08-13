@@ -46,6 +46,23 @@ const SubTitle = styled.h2`
   }
 `;
 
+const SubTitle2 = styled.h2`
+  font-size: ${(props) => props.theme.fontmd};
+  text-transform: capitalize;
+  color: ${(props) => props.theme.text};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  border-bottom: 2px solid ${(props) => props.theme.text};
+  width: fit-content;
+  margin-left: 30px;
+
+  @media (max-width: 40em) {
+    font-size: ${(props) => props.theme.fontxl};
+  }
+`;
+
 const Container = styled.div`
   width: 85%;
   height: auto;
@@ -83,6 +100,7 @@ const LevitatingWrapper = styled.div`
   display: inline-block;
   animation: ${levitate} 2s ease-in-out infinite;
 `;
+
 const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -98,7 +116,15 @@ const InnerContainer = styled.div`
     gap: 20px; /* Ajusta el espacio entre elementos para pantallas más pequeñas */
   }
 `;
+
 const Text = styled.a`
+  font-size: ${(props) => props.theme.fontmd};
+  color: ${(props) => props.theme.text};
+  text-decoration: none;
+  text-align: center;
+`;
+
+const Text2 = styled.a`
   font-size: ${(props) => props.theme.fontmd};
   color: ${(props) => props.theme.text};
   text-decoration: none;
@@ -107,8 +133,9 @@ const Text = styled.a`
 
 const TextContainer = styled.div`
   width: 80%;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  
 `;
 
 const StarkJitsu = () => {
@@ -142,7 +169,7 @@ const StarkJitsu = () => {
             />
           </LevitatingWrapper>
           <TextContainer>
-            <SubTitle>Test your Dev Skills</SubTitle>
+            <SubTitle2>Test your Dev Skills</SubTitle2>
             <Text>
               In this section, aspiring Cairo Devs will be able to interact with Cairo. Practice with one of the most promising and powerful 
               programming languages out there!
@@ -153,12 +180,12 @@ const StarkJitsu = () => {
         <InnerContainer>
           <TextContainer>
             <SubTitle>Play</SubTitle>
-            <Text>
+            <Text2>
               In this section of StarkEasy, you’ll be able to play mini-educational games which are part of a very special Starknet Adventure, 
               where you will feel like a Martial Arts apprentice ready to embark yourself on a journey to get your Starknet belts while 
               defeating dangerous enemies in the process. Creative characters and landscapes will enhance your gaming experience as you’ll try 
               your best to rank high in the Leaderboard!
-            </Text>
+            </Text2>
           </TextContainer>
           <LevitatingWrapper>
             <StyledImage

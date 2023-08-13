@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
 import { useAccount } from '@starknet-react/core';
-import GlobalStyles from './components/GlobalStyles'; // Importa el archivo GlobalStyles.js
-
+import GlobalStyles from './components/GlobalStyles';
+import { useState } from 'react';
 import Connect from './components/Connect';
 import Info from './components/Info';
-import Logo from "./components/Logo";
+import Logo from './components/Logo';
 import SignForm from './components/SignForm';
-
 import TokenFormComponent from './components/TokenForm';
 import Home from './components/Home';
 import HDSComponent from './components/HDS';
@@ -19,78 +18,164 @@ import StandarComponent from './components/Standar';
 import MulticallComponent from './components/Multicall';
 import UniversalComponent from './components/Universal';
 import Multicall2Component from './components/Multicall2';
+import styled from 'styled-components';
 
+const DropdownContainer = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+
+const DropdownButton = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'teko', sans-serif;
+  font-size: 30px;
+  margin-bottom: px; 
+  position: relative;
+  margin-right: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000; 
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.3s;
+  }
+
+  &:hover:before {
+    transform: scaleX(1);
+  }
+
+  &:hover {
+    color: #ff0000; 
+  }
+`;
+
+
+const DropdownContent = styled.div<{ open: boolean }>`
+  display: ${(props) => (props.open ? 'block' : 'none')};
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+`;
+
+const DropdownItem = styled.button`
+  width: 100%;
+  padding: 8px 16px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+`;
 
 function App() {
   const { isConnected } = useAccount();
+  const [StarkDevStationOpen, setStarkDevStationOpen] = useState(false);
+  const [StarkJitsuonOpen, setStarkJitsuonOpen] = useState(false);
+
+  const toggleStarkDevStation = () => {
+    setStarkDevStationOpen(!StarkDevStationOpen);
+  };
+
+  const toggleStarkJitsu = () => {
+    setStarkJitsuonOpen(!StarkJitsuonOpen);
+  };
+
+  const closeDropdowns = () => {
+    setStarkDevStationOpen(false);
+    setStarkJitsuonOpen(false);
+  };
 
   return (
     <Router>
       <GlobalStyles />
 
       <div className="h-full p-4 flex flex-col">
-        
         {isConnected && (
           <nav className="mb-4">
-            <ul className="flex justify-center items-center"> {/* Utilizamos flex para centrar los elementos */}
+            <ul className="flex justify-center items-center">
               <li className="mr-4">
                 <Info />
               </li>
-              <li className="mr-4">
-                <Link to="/TokenForm" className="link">
-                  Token
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/hds" className="link">
-                  HDS
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/NHS" className="link">
-                  NHT
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/starknet-es" className="link">
-                  Starknet-ES
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/Workshop" className="link">
-                  Workshop
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/MenuStarkAdventure" className="link">
-                  Stark Adventure
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/Comandos" className="link">
-                  Terminal
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/Standar" className="link">
-                  Standar
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/Universal" className="link">
-                  Universal
-                </Link>
-              </li>
-              <li className="mr-4">
-                <Link to="/Multicall" className="link">
-                  Multicall
-                </Link>
-              </li>
-              <li>
-                <Link to="/Multicall2" className="link">
-                  Multicall x100
-                </Link>
-              </li>
+              
+              {/* Menú Stark Jitsu */}
+              <DropdownContainer>
+                <DropdownButton onClick={toggleStarkJitsu}>Stark Jitsu</DropdownButton>
+                <DropdownContent open={StarkJitsuonOpen}>
+                  <DropdownItem>
+                    <Link to="/hds" onClick={closeDropdowns}>Hds</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/starknet-es" onClick={closeDropdowns}>StarknetEs</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/Workshop" onClick={closeDropdowns}>Workshop</Link>
+                  </DropdownItem>
+                </DropdownContent>
+              </DropdownContainer>
+              
+          
+            {/* Menú Stark Adventure */}
+            <li className="mr-4">
+  <Link
+    to="/MenuStarkAdventure"
+    className="link"
+    style={{
+      fontFamily: 'teko, sans-serif',
+      fontSize: '30px',
+      margin: '0.5rem 0',
+      marginRight: '20px',
+      textDecoration: 'none',
+      color: '#000000', // Color de texto normal
+      transition: 'color 0.3s', // Transición suave para el cambio de color
+    }}
+    onMouseEnter={(e) => (e.currentTarget.style.color = '#FF0000')} // Cambiar el color al pasar el cursor
+    onMouseLeave={(e) => (e.currentTarget.style.color = '#000000')} // Restaurar el color al quitar el cursor
+  >
+    Stark Adventure
+  </Link>
+</li>
+              
+              {/* Menú Stark Dev-Station */}
+              <DropdownContainer>
+                <DropdownButton onClick={toggleStarkDevStation}>Stark Dev-Station</DropdownButton>
+                <DropdownContent open={StarkDevStationOpen}>
+                  <DropdownItem>
+                    <Link to="/TokenForm" onClick={closeDropdowns}>TokenForm</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/NHS" onClick={closeDropdowns}>NHT</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/Comandos" onClick={closeDropdowns}>Terminal</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/Standar" onClick={closeDropdowns}>Standar</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/Universal" onClick={closeDropdowns}>Universal</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/Multicall" onClick={closeDropdowns}>Multicall</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/Multicall2" onClick={closeDropdowns}>Multicall x100</Link>
+                  </DropdownItem>
+                </DropdownContent>
+              </DropdownContainer>
+             
               <li className="ml-auto mr-4">
                 <SignForm />
               </li>
@@ -99,43 +184,35 @@ function App() {
           </nav>
         )}
 
-                {/* Resto del código de la aplicación */}
-                <div className="flex-1 flex items-center text-center justify-center h-full">
-   
-                  <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/connect" element={<Connect />} />
-                  {isConnected && (
-                    <>
-                      <Route path="/TokenForm" element={<TokenFormPage />} />
-                      <Route path="/NHS" element={<NHSPage />} />
-                      <Route path="/hds" element={<HDSPage />} />
-                      <Route path="/starknet-es" element={<StarknetESPage />} />
-                      <Route path="/Workshop" element={<WorkshopPage />} />
-                      <Route path="/MenuStarkAdventure" element={<MenuStarkAdventurePage />} />
-                      <Route path="/Comandos" element={<ComandosPage />} />
-                      <Route path="/Standar" element={<StandarPage />} />
-                      <Route path="/Multicall" element={<MulticallPage />} />
-                      <Route path="/Multicall2" element={<Multicall2Page />} />
-                      <Route path="/Universal" element={<UniversalPage />} />
-                      <Route path="/" element={<Navigate to="/TokenForm" />} />
-                    </>
-                  )}
+        <div className="flex-1 flex items-center text-center justify-center h-full">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/connect" element={<Connect />} />
+            {isConnected && (
+              <>
+                <Route path="/TokenForm" element={<TokenFormPage />} />
+                <Route path="/NHS" element={<NHSPage />} />
+                <Route path="/hds" element={<HDSPage />} />
+                <Route path="/starknet-es" element={<StarknetESPage />} />
+                <Route path="/Workshop" element={<WorkshopPage />} />
+                <Route path="/MenuStarkAdventure" element={<MenuStarkAdventurePage />} />
+                <Route path="/Comandos" element={<ComandosPage />} />
+                <Route path="/Standar" element={<StandarPage />} />
+                <Route path="/Multicall" element={<MulticallPage />} />
+                <Route path="/Multicall2" element={<Multicall2Page />} />
+                <Route path="/Universal" element={<UniversalPage />} />
+                <Route path="/" element={<Navigate to="/TokenForm" />} />
+              </>
+            )}
           </Routes>
         </div>
-        </div>
-        
+      </div>
     </Router>
-    
   );
 }
 
 function HDSPage() {
-  return (
-    <>
-     {window.location.pathname === '/hds' && <HDSComponent />}
-    </>
-  );
+  return <HDSComponent />;
 }
 
 function StarknetESPage() {

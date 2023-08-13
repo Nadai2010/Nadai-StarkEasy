@@ -14,15 +14,16 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-padding: 10px 10px;
-font-size: 16px;
-font-weight: bold;
-background-color: #4f007cfb;
-color: rgba(255, 255, 255, 0.87);
-border: none;
-border-radius: 20px;
-cursor: pointer;
-transition: background-color 0.3s;
+  padding: 10px 10px;
+  font-size: 16px;
+  margin-left: 70px; // Alinea el botón a la derecha ajustando automáticamente el margen izquierdo
+  font-weight: bold;
+  background-color: #4f007cfb;
+  color: rgba(255, 255, 255, 0.87);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: #0056b3;
@@ -32,6 +33,7 @@ transition: background-color 0.3s;
     font-size: 14px;
   }
 `;
+
 
 const SignFormOverlay = styled.div`
   position: fixed;
