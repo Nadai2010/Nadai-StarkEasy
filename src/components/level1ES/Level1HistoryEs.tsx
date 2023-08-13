@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import styled from "styled-components";
-import CarouselAdventure from '../CarouselAdventure'
+import CarouselAdventureEs from '../CarouselAdventureEs'
 
 import Loading from "../Loading";
 
@@ -174,34 +174,34 @@ const SubText2 = styled.p`
 
 
 
-const Level1History = () => {
+const Level1HistoryEs = () => {
   return (
     <Section id="about">
       <Container>
         <Box1>
           <Suspense fallback={<Loading />}>
-          <CarouselAdventure />
+          <CarouselAdventureEs />
           </Suspense>
         </Box1>
        
         <Box>
           <Title>
-            Welcome to the extraordinary world of Starknetia!
+          ¡Bienvenido al extraordinario mundo de Starknetia!
           </Title>
           <SubText2>
-            Your Learning dApp to learn about Starknet!
+          ¡Comienza tu camino para convertirte en StarkSenshi!
           </SubText2>
           <SubText>
-           Get ready to embark on a martial arts adventure like no other. In this adventure, you will put yourself in the shoes of young students moving their first steps in the famous Martial Arts Academy of Starknetia, the StarkJitsu School.
+          Prepárate para embarcarte en una aventura de artes marciales como ninguna otra. En esta aventura te pondrás en la piel de jóvenes estudiantes que dan sus primeros pasos en la famosa Academia de Artes Marciales de Starknetia, la Escuela StarkJitsu.
            <br/>
            <br/>
-           A lot of tough but inspiring challenging adventures are waiting for you. However, dear StarkJitsu students, the road to mastery is not easy.
+           Te esperan muchas aventuras desafiantes, duras pero inspiradoras. Sin embargo, queridos estudiantes de StarkJitsu, el camino hacia la maestría no es nada fácil.
            <br/>
            <br/>
-           In your relentless pursuit for greatness, you will face several challenges that will test your strength, your agility and your inner soul.
+           En su incesante búsqueda de la grandeza, se enfrentarán a varios desafíos que pondrán a prueba su fuerza, su agilidad y su alma interior.
           <br/>
           <br/>
-           Get ready for an intense training program guided by the legendary “Stark Senseis”, experienced teachers renowned for their mastery of the Stark-arts. With their advice, you will push your limits to become a StarkSenshi, a wise and powerful Fighter of Starknetia.
+          Prepárate para un intenso programa de entrenamiento guiado por los legendarios "Stark Senseis", maestros experimentados reconocidos por su dominio de las artes de Starknet. Con sus consejos, superarás tus límites para convertirte en un StarkSenshi, un luchador sabio y poderoso de Starknetia.
           </SubText>
         </Box>
         
@@ -210,4 +210,4 @@ const Level1History = () => {
   );
 };
 
-export default Level1History;
+export default Level1HistoryEs;

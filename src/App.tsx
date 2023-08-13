@@ -1,22 +1,25 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
 import { useAccount } from '@starknet-react/core';
 import GlobalStyles from './components/GlobalStyles'; // Importa el archivo GlobalStyles.js
+
 import Connect from './components/Connect';
 import Info from './components/Info';
 import Logo from "./components/Logo";
 import SignForm from './components/SignForm';
+
 import TokenFormComponent from './components/TokenForm';
 import Home from './components/Home';
 import HDSComponent from './components/HDS';
 import StarknetESComponent from './components/StarknetEs';
 import NHSComponent from './components/NftForm';
 import WorkshopComponent from './components/Workshop';
-import JuegaComponent from './components/Juega';
+import MenuStarkAdventureComponent from './components/MenuStarkAdventure';
 import ComandosComponent from './components/Comandos';
 import StandarComponent from './components/Standar';
 import MulticallComponent from './components/Multicall';
 import UniversalComponent from './components/Universal';
 import Multicall2Component from './components/Multicall2';
+
 
 function App() {
   const { isConnected } = useAccount();
@@ -59,8 +62,8 @@ function App() {
                 </Link>
               </li>
               <li className="mr-4">
-                <Link to="/Juega" className="link">
-                  Juega
+                <Link to="/MenuStarkAdventure" className="link">
+                  Stark Adventure
                 </Link>
               </li>
               <li className="mr-4">
@@ -109,7 +112,7 @@ function App() {
                       <Route path="/hds" element={<HDSPage />} />
                       <Route path="/starknet-es" element={<StarknetESPage />} />
                       <Route path="/Workshop" element={<WorkshopPage />} />
-                      <Route path="/Juega" element={<JuegaPage />} />
+                      <Route path="/MenuStarkAdventure" element={<MenuStarkAdventurePage />} />
                       <Route path="/Comandos" element={<ComandosPage />} />
                       <Route path="/Standar" element={<StandarPage />} />
                       <Route path="/Multicall" element={<MulticallPage />} />
@@ -151,8 +154,8 @@ function TokenFormPage() {
   return <TokenFormComponent />;
 }
 
-function JuegaPage() {
-  return <JuegaComponent />;
+function MenuStarkAdventurePage() {
+  return <MenuStarkAdventureComponent />;
 }
 
 function ComandosPage() {

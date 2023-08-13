@@ -1,4 +1,4 @@
-import{s as i,j as t,L as n}from"./index-b1569512.js";const o=i.section`
+import{s as n,j as t,L as i}from"./index-96f09846.js";const o=n.section`
   width: 100vw;
   height: 25rem;
   position: relative;
@@ -17,8 +17,8 @@ import{s as i,j as t,L as n}from"./index-b1569512.js";const o=i.section`
     height: 15rem;
     flex-direction: column;
   }
-`,r=i.h1`
-  font-size: ${e=>e.theme.fontxl};
+`,r=n.h1`
+  font-size: 30px;
   color: ${e=>e.theme.text};
   padding: 1rem 2rem;
   z-index: 10;
@@ -38,7 +38,7 @@ import{s as i,j as t,L as n}from"./index-b1569512.js";const o=i.section`
 
     width: 100%;
   }
-`,a=i.div`
+`,a=n.div`
   width: 35%;
   display: flex;
   
@@ -48,7 +48,7 @@ import{s as i,j as t,L as n}from"./index-b1569512.js";const o=i.section`
     width: 100%;
     justify-content: center;
   }
-`,d=i.button`
+`,d=n.button`
   display: inline-block;
   background-color: #d81f3f;
   color: white;
@@ -90,4 +90,4 @@ import{s as i,j as t,L as n}from"./index-b1569512.js";const o=i.section`
     transform: translate(-50%, -50%) scale(1);
     padding: 0.3rem;
   }
-`,m=()=>t.jsxs(o,{children:[t.jsx(r,{children:"Start the Adventure"}),t.jsx(a,{children:t.jsx(n,{to:"/connect",children:t.jsx(d,{children:"Stark Easy"})})})]});export{m as default};
+`,m=()=>t.jsxs(o,{children:[t.jsx(r,{children:"Tell me and I forget, teach me and I may remember, involve me and I learn. - Benjamin Franklin"}),t.jsx(a,{children:t.jsx(i,{to:"/connect",children:t.jsx(d,{children:"Stark Easy"})})})]});export{m as default};

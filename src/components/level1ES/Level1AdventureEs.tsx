@@ -96,30 +96,27 @@ const Image = styled.img`
   height: 400px;
 `;
 
-const Level1Adventure = () => {
+const Level1AdventureEs = () => {
   return (
     <Section>
       <BackgroundImage />
       <Container>
         <Card>
-          <Title>Eliumi and Uriechi, the old wise twins known as “The founding Fathers of Starknetia”</Title>
-          <SubText2>Legendary fighters and masters, have an important message for you: </SubText2>
+          <Title>Eliumi y Uriechi, los viejos sabios gemelos conocidos como “los padres fundadores de Starknetia”</Title>
+          <SubText2>Maestros y luchadores legendarios, tenemos un mensaje importante para ustedes: </SubText2>
           <SubText>
            </SubText>
            <ColumnContainer>
           <SubTextLight>
           <ImageContainer>
           <Image src={Eli} alt="Left Image" />
-          Dear StarkJitsu Students, you are the future of Starknetia!
+          Hoy es su primer día en la escuela StarkJitsu y queremos desearles una buena experiencia de aprendizaje. Durante esta aventura, aceptan cada desafío como una oportunidad para descubrir su fuerza interior y liberar su verdadero potencial como Stark-Senshi.
           <br/>
           <br/>
-          Today is your first day at the StarkJitsu school and we want to wish you a good learning experience. During this adventure, accept every challenge as an opportunity to discover your inner strength and unleash your true potential as a Stark-Senshi. 
+          Hay muchas lecciones por delante, séan continuos y sigan el principio fundamental de Starknetia, ¡Integridad!
           <br/>
           <br/>
-          Many lessons are ahead of you, be continuous and follow the Founding principle of Starknetia, Integrity!
-          <br/>
-          <br/>
-          Believe in yourself, you are the future of Starknetia!
+          ¡Crean en si mismo, ustedes son el futuro de Starknetia!
 
           <Image src={Uri} alt="Right Image" />
           </ImageContainer>
@@ -136,4 +133,4 @@ const Level1Adventure = () => {
   );
 };
 
-export default Level1Adventure;
+export default Level1AdventureEs;

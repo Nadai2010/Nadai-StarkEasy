@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StarkEasy from "../assets/CardLevel1_1.png";
+import StarkEasy from "../assets/CardLevel1Es.png";
 
 const ImageContainer = styled.div`
   width: 80%;
@@ -49,7 +49,7 @@ const Tooltip = styled.div`
   }
 `;
 
-const CarouselAdventure = () => {
+const CarouselAdventureEs = () => {
   return (
     <ImageContainer>
       <img src={StarkEasy} alt="Stark Easy Cover" />
@@ -62,4 +62,4 @@ const CarouselAdventure = () => {
   );
 };
 
-export default CarouselAdventure;
+export default CarouselAdventureEs;

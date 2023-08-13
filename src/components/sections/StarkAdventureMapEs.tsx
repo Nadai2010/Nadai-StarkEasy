@@ -2,14 +2,14 @@ import { useState, lazy, Suspense } from "react";
 import styled from "styled-components";
 import Loading from "../Loading";
 import About from "./StarkEasy";
-import Level1 from "../level1/Level1";
+import Level1Es from "../level1ES/Level1Es";
 import ReactModal from "react-modal";
-import CardLevel1 from "/src/assets/CardLevel1.png";
-import CardLevel from "/src/assets/CardLevel1_1.png";
-import CardLevel2 from "/src/assets/CardLevel1_2.png";
-import CardLevel3 from "/src/assets/CardLevel1_3.png";
+import CardLevel from "/src/assets/CardLevel1Es.png";
+import CardLevel1 from "/src/assets/CardLevel1_1Es.png";
+import CardLevel2 from "/src/assets/CardLevel1_2Es.png";
+import CardLevel3 from "/src/assets/CardLevel1_3Es.png";
 
-const CarouselAdventureMap = lazy(() => import("../CarouselAdventureMap"));
+const CarouselAdventureMapEs = lazy(() => import("../CarouselAdventureMapEs"));
 
 
 const Section = styled.section`
@@ -40,7 +40,7 @@ const CardContainer = styled.div`
 `;
 
 const Card = styled.div`
-  width: 100px;
+  width: 150px;
   height: ${(props: { height: number }) => props.height}px;
   background-color: white;
   border-radius: 10px;
@@ -49,12 +49,12 @@ const Card = styled.div`
   overflow: hidden;
   cursor: pointer;
   position: fixed;
-  top: 20%;
-  left: 13%;
+  top: 25%;
+  left: 5%;
   
 
   &:hover {
-    transform: translateX(150%) translateY(40%) scale(2.5);
+    transform: translateX(25%) translateY(40%) scale(2);
   }
 
   img {
@@ -80,7 +80,7 @@ const Card2 = styled.div`
   
 
   &:hover {
-    transform: translateX(-150%) translateY(+60%) scale(2);
+    transform: translateX(+20%) translateY(+60%) scale(2.2);
   }
 
   img {
@@ -92,7 +92,7 @@ const Card2 = styled.div`
 `;
 
 const Card3 = styled.div`
-  width: 170px;
+  width: 200px;
   height: ${(props: { height: number }) => props.height}px;
   background-color: white;
   border-radius: 10px;
@@ -101,12 +101,12 @@ const Card3 = styled.div`
   overflow: hidden;
   cursor: pointer;
   position: fixed;
-  top: 30%;
-  left: 40%;
+  top: 40%;
+  left: 30%;
   
 
   &:hover {
-    transform: translateY(-0%) scale(2.1);
+    transform: translateY(-0%) scale(1.5);
   }
 
   img {
@@ -127,8 +127,8 @@ const Card4 = styled.div`
   overflow: hidden;
   cursor: pointer;
   position: fixed;
-  top: 65%;
-  right: 15%;
+  top: 45%;
+  right: 26%;
   
 
   &:hover {
@@ -143,9 +143,26 @@ const Card4 = styled.div`
   }
 `;
 
-interface StarkAdventureMapProps {
+const NavigationBar = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: ${(props) => props.theme.primary};
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+`;
+
+interface StarkAdventureMapEsProps {
   language: string;
-}
+};
 
 const Modal = styled(ReactModal)`
 /* Estilos para tu modal aquí */
@@ -154,7 +171,7 @@ overflow-y: auto; /* Agrega overflow-y para permitir el desplazamiento vertical 
 max-height: 110vh; /* Limita la altura máxima del modal para que no cubra toda la pantalla */
 `;
 
-const StarkAdventureMap: React.FC<StarkAdventureMapProps> = ({  }) => {
+const StarkAdventureMapEs: React.FC<StarkAdventureMapEsProps> = ({  }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(null); // Asegura el tipo correcto
 
@@ -167,12 +184,12 @@ const StarkAdventureMap: React.FC<StarkAdventureMapProps> = ({  }) => {
     <Section id="home">
       <Container>
         <Suspense fallback={<Loading />}>
-          <CarouselAdventureMap />
+          <CarouselAdventureMapEs />
           <CardContainer>
 
             <Card
-              height={160}
-              onClick={() => handleCardClick(<Level1 />)}
+              height={250}
+              onClick={() => handleCardClick(<Level1Es />)}
             >
               <img src={CardLevel}/>
             </Card>
@@ -183,7 +200,7 @@ const StarkAdventureMap: React.FC<StarkAdventureMapProps> = ({  }) => {
               <img src={CardLevel1} alt="Image description" />
             </Card2>
             <Card3
-              height={250}
+              height={300}
               onClick={() => handleCardClick(<About />)}
             >
               <img src={CardLevel2} alt="Image description" />
@@ -196,6 +213,11 @@ const StarkAdventureMap: React.FC<StarkAdventureMapProps> = ({  }) => {
             </Card4>
             {/* Agrega más tarjetas aquí con diferentes posiciones */}
           </CardContainer>
+          <NavigationBar>
+            <button onClick={() => handleCardClick(<About />)}>1</button>
+            <button onClick={() => handleCardClick(<About />)}>2</button>
+            <button onClick={() => handleCardClick(<About />)}>3</button>
+          </NavigationBar>
           {isModalOpen && (
             <Modal
               isOpen={isModalOpen}
@@ -212,4 +234,4 @@ const StarkAdventureMap: React.FC<StarkAdventureMapProps> = ({  }) => {
   );
 };
 
-export default StarkAdventureMap;
+export default StarkAdventureMapEs;

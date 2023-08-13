@@ -108,11 +108,8 @@ const LogoImageStyled = styled.img`
 
 const Navigation = () => {
   const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
-  const handleLogoClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   const handleHomeClick = () => {
     navigate('/connect');
@@ -135,7 +132,7 @@ const Navigation = () => {
   return (
     <Section id="navigation">
       <NavBar>
-        <LogoContainer onClick={handleLogoClick}>
+        <LogoContainer >
         <LogoImageStyled src={logoImage} alt="Logo" />
         </LogoContainer>
         <Menu style={{ display: isMenuOpen ? 'flex' : 'none' }}>

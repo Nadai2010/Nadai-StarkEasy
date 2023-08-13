@@ -92,8 +92,12 @@ const Faq = () => {
         <Box>
           <Accordion ScrollTrigger={ScrollTrigger} title="What is StarkEasy?"
           >
-          “Tell me and I forget, teach me and I may remember, involve me and I learn.” — Benjamin Franklin
+         StarkEasy is a Learning Dapp, Academy and Portal to teach the world about Starknet and its Ecosystem in a fun and interactive way.
+         <br/>
+          <br/>
+        StarkEasy will begin its activities with an English and Spanish bilingual approach. The Spanish section of Stark Easy will be known as “Hablando de Starknet”.
           </Accordion>
+
           <Accordion
             ScrollTrigger={ScrollTrigger}
             title="What makes StarkEasy unique?"
@@ -106,12 +110,21 @@ const Faq = () => {
             ScrollTrigger={ScrollTrigger}
             title="What can you learn on StarkEasy?"
           >
-          “Tell me and I forget, teach me and I may remember, involve me and I learn.” — Benjamin Franklin
+          If you’re new to Starknet, StarkEasy will be your best onboarding tool to enter this fast-growing Ecosystem. Whether you are a Developer, a User or an Investor you will be able to study and practice your skills while having a great time.
+
           </Accordion>
           <Accordion
             ScrollTrigger={ScrollTrigger}
             title="How can I join the StarkEasy Community?"
           >
+            Follow us on Twitter
+            <br/>
+           <br/>
+            https://twitter.com/StarkEasy_ 
+            <br/>
+           <br/>
+            More Social Channels are on the way!
+
           </Accordion> 
         </Box>
       </Container>

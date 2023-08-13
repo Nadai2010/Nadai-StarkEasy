@@ -23,7 +23,7 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: 30px;
   color: ${(props) => props.theme.text};
   padding: 1rem 2rem;
   z-index: 10;
@@ -104,7 +104,7 @@ const Banner = () => {
   return (
     <Section>
       <Title>
-        {"Start the Adventure"}
+        {"Tell me and I forget, teach me and I may remember, involve me and I learn. - Benjamin Franklin"}
       </Title>
       <BtnContainer>
       <Link to="/connect">

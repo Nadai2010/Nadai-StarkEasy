@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StarkEasy from "../assets/MapLevelEn.png";
+import StarkEasy from "../assets/MapLevelEs.png";
 
 const ImageContainer = styled.div`
   width: 100%;
@@ -15,12 +15,12 @@ const ImageContainer = styled.div`
   }
 `;
 
-const CarouselAdventureMapEs = () => {
+const CarouselAdventure = () => {
   return (
     <ImageContainer>
-      <img src={StarkEasy} alt="Stark" />
+      <img src={StarkEasy} alt="Stark Easy Cover" />
     </ImageContainer>
   );
 };
 
-export default CarouselAdventureMapEs;
+export default CarouselAdventure;

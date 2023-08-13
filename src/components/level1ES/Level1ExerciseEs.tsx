@@ -77,27 +77,27 @@ const TotalQuestions = 4;
 const questions = [
   {
     question: "What is blockchain?",
-    options: ["A Fast Food chain", "An Algorithm for AI", "A digital distributed ledger", "A dog breed"],
+    options: ["A type of building material", "A type of spreadsheet software", "A digital ledger technology", "A type of encryption algorithm"],
     correctOption: "option3",
   },
   {
-    question: "Which of the following is a Blockchain feature?",
-    options: ["Robotics", "Biometrics", "Smart Contracts", "Bluetooth"],
-    correctOption: "option3",
+    question: "Which cryptocurrency is often referred to as 'digital gold'?",
+    options: ["Bitcoin", "Ethereum", "Ripple", "Litecoin"],
+    correctOption: "option1",
   },
   {
-    question: "How many segments compose the Web3 field in the video?",
-    options: ["3", "4", "6", "7"],
-    correctOption: "option3",
+    question: "What is a smart contract in blockchain terminology?",
+    options: ["A legally binding document", "An automated program that executes predefined actions when certain conditions are met", "A type of blockchain consensus algorithm", "A cryptographic key pair"],
+    correctOption: "option2",
   },
   {
-    question: "What is a DAO?",
-    options: ["A religious principle", "A Deactivated Anonymous Object", "A type of food", "A Decentralized Autonomous Organization"],
-    correctOption: "option4",
+    question: "What is the process of adding a new block of transactions to the blockchain called?",
+    options: ["Mining", "Smelting", "Casting", "Forging"],
+    correctOption: "option1",
   },
 ];
 
-const Level1Exercise = () => {
+const Level1ExerciseEs = () => {
   const [selectedOptions, setSelectedOptions] = useState<{ [key: string]: string | null }>({});
   const [attempts, setAttempts] = useState<{ [key: string]: number }>({});
   const [points, setPoints] = useState(0);
@@ -170,4 +170,4 @@ const Level1Exercise = () => {
   );
 };
 
-export default Level1Exercise;
+export default Level1ExerciseEs;

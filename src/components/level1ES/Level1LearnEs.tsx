@@ -52,7 +52,7 @@ const Card = styled.div`
   transform: translateX(-50%) translateY(-50%) scale(1); /* Agregar escala inicial */
   transition: transform 0.3s ease-in-out; /* Transición para el efecto de zoom */
   position: absolute;
-  top: 55%;
+  top: 50%;
   right: calc(-15% + 15px); /* Calcula el valor del lado derecho */
   max-width: 400px;
 
@@ -67,7 +67,7 @@ const TitleContainer = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontlg};
   color: blue;
   text-align: center;
 `;
@@ -80,13 +80,13 @@ const Title2 = styled.h2`
 `;
 
 const Description = styled.p`
-  font-size: 25px;
+  font-size: ${(props) => props.theme.fontmd};
   color: black;
   text-align: center;
   
 `;
 
-const Level1Learn = () => {
+const Level1LearnEs = () => {
   const opts = {
     height: "100%",
     width: "100%",
@@ -114,9 +114,12 @@ const Level1Learn = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString(`<span class="text">Workout #1 </span>`)
-                .pauseFor(2000)
-                 .deleteAll()
+                .typeString(`<span class="text">Level 1 - Hablando de Starknet #1</span>`)
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString(`<span class="text">Introducción al Ecosistema</span>`)
+                .pauseFor(1000)
+                .deleteAll()
                 .start();
             }}
           />
@@ -125,17 +128,10 @@ const Level1Learn = () => {
 
         <Card>
         <Title>
-        Starting with the basics!
+            Nadai y Nurst
         </Title>
           <Description>
           In this first lesson, you will learn the basics of Blockchain, Crypto and Web3 by watching this video by Nurstar, one of the Senseis of the Stark-Jitsu Academy. 
-          <br/>
-          <br/>
-          If you’re familiar with this concept, you could also manage to answer all the questions correctly without watching it, or maybe not!
-          <br/>
-          <br/>
-          Revision never hurts! 
-
           </Description>
         </Card>
       </TextContainer>
@@ -143,4 +139,4 @@ const Level1Learn = () => {
   );
 };
 
-export default Level1Learn;
+export default Level1LearnEs;
