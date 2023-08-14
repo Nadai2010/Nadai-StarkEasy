@@ -1,10 +1,142 @@
 import { useState, useEffect, ChangeEvent } from 'react';
 import YouTube from 'react-youtube';
-import './HDS.css';
+import styled, { createGlobalStyle } from 'styled-components';
 import L2nftJson from "../lib/L2NFT.json";
 import { useAccount } from "@starknet-react/core";
 import { Contract } from "starknet";
-import NetworkInfo from './NetworkInfo';
+
+const GlobalStyles = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f8f8;
+  }
+`;
+
+const AppContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+`;
+
+const ContentContainer = styled.div`
+  width: 50%;
+  height: 85%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Cambio para alinear elementos verticalmente */
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+`;
+
+const Title = styled.h2`
+  font-size: 4rem;
+  color: #6b099c;
+  margin-bottom: 0rem;
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    color: #50097c;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+`;
+
+const VideoWrapper = styled.div`
+  margin: 0px 0;
+  border-radius: 50px; /* Agregar borde redondeado */
+  overflow: hidden; 
+  
+`;
+
+const ArrowButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+`;
+
+const ArrowIcon = styled.svg`
+  width: 1000px; /* Ajusta el ancho de las flechas */
+  height: 40px; /* Ajusta la altura de las flechas */
+  fill: #6b099c; /* Cambia el color de las flechas */
+  cursor: pointer;
+  transition: fill 0.3s ease;
+
+  &:hover {
+    fill: #50097c; /* Cambia el color al hacer hover */
+  }
+`;
+
+
+const FormWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px; /* Espacio adicional arriba */
+`;
+
+const Input = styled.input`
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+`;
+
+const MintButton = styled.button`
+  padding: 10px 20px;
+  background-color: #9d6af0;
+  color: ${(props) => props.theme.body};
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Teko', sans-serif;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  &:hover {
+    background-color: #6b099c;
+    transform: scale(1.05);
+  }
+
+  &:hover:before {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+`;
 
 interface SecretWords {
   [key: string]: string;
@@ -19,7 +151,7 @@ const secretWords: SecretWords = {
   argentina: "0x07d5a2a46e422fd5d5706ca8599db243760ae29b4a58a975159cebe5e7f2ea69",
   playa: "0x0266fa8b7380043135c23b862be06a942adb955fef7a46e1b8c7d73d7b48befd",
   jugar: "0x02269df2f4cae317c90fdcb1a8fa8fbe21744ac9e197721ecaa3baf14c1b3571",
-  word9: "0x018561e9475a9248f0580e3274fb8a027b33850dbd2e53f2d6acb9c14fcd0599",
+  planeta: "0x018561e9475a9248f0580e3274fb8a027b33850dbd2e53f2d6acb9c14fcd0599",
   word10: "0",
 };
 
@@ -76,36 +208,64 @@ const HDS = () => {
   }, [secretWord]);
 
   return (
-    <div className="hds-page">
-      <div className="hds-title text-4xl shadowed mb-5">Hablando De Starknet</div>
-      <div className="hds-video">
-        <YouTube videoId={videoIds[currentVideoIndex]} opts={opts} onReady={onReady} onPlay={onPlay} onPause={onPause} />
-      </div>
-      <div className="hds-navigation">
-        <button className="hds-button hds-previous-button" onClick={goToPreviousVideo}>
-          Anterior
-        </button>
-        <button className="hds-button hds-next-button" onClick={goToNextVideo}>
-          Siguiente
-        </button>
-      </div>
-      <div className="hds-form">
-        <input
-          className="hds-input"
-          type="text"
-          placeholder="Palabra secreta"
-          value={secretWord}
-          onChange={handleSecretWordChange}
-        />
-        <button
-          className={`hds-button hds-mint-button ${isSecretWordEntered ? 'hds-mint-button-active' : ''}`}
-          onClick={mintNFT}
-          disabled={!isConnected || !currentContract}
-        >
-          Crear NFT
-        </button>
-      </div>
-      <NetworkInfo />
+    <div>
+      <GlobalStyles />
+      <AppContainer>
+        <ContentContainer>
+          <Title>
+            <span>Hablando de Starknet</span>
+          </Title>
+
+          <VideoWrapper>
+            <YouTube videoId={videoIds[currentVideoIndex]} opts={opts} onReady={onReady} onPlay={onPlay} onPause={onPause} />
+          </VideoWrapper>
+
+          <ArrowButtons>
+            <ArrowIcon
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              onClick={goToPreviousVideo}
+            >
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </ArrowIcon>
+
+            <FormWrapper>
+            <Input
+              type="text"
+              placeholder="Secret Word NHT"
+              value={secretWord}
+              onChange={handleSecretWordChange}
+            />
+            <MintButton onClick={mintNFT} disabled={!isConnected || !currentContract || !isSecretWordEntered}>
+              Crear NHT
+            </MintButton>
+          </FormWrapper>
+
+
+            <ArrowIcon
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              onClick={goToNextVideo}
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </ArrowIcon>
+          </ArrowButtons>
+
+ 
+        </ContentContainer>
+      </AppContainer>
     </div>
   );
 };

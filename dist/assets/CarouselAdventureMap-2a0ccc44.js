@@ -1,4 +1,4 @@
-import{s as e,j as s}from"./index-99c1f214.js";const t="/assets/MapLevelEn-b61a513e.png",a=e.div`
+import{s as e,j as s}from"./index-daefa554.js";const t="/assets/MapLevelEn-b61a513e.png",a=e.div`
   width: 100%;
 
   img {

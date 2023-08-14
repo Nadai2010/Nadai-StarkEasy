@@ -1,4 +1,4 @@
-import{s as n,j as t,L as i}from"./index-99c1f214.js";const o=n.section`
+import{s as n,j as t,L as i}from"./index-daefa554.js";const o=n.section`
   width: 100vw;
   height: 25rem;
   position: relative;

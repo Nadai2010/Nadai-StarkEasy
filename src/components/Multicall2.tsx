@@ -89,7 +89,7 @@ const CustomButton = styled.button`
   font-weight: bold;
   position: relative;
   overflow: hidden;
-  font-family: 'Teko', sans-serif; /* Agregar la fuente Teko al botón */
+  font-family: 'Teko', sans-serif;
 
   &:before {
     content: "";

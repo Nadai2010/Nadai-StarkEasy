@@ -13,6 +13,7 @@ const NavBar = styled.nav`
   background: white;
   width: 100%;
   padding: 0 2rem;
+  z-index: 999;
 
   @media (max-width: 70em) {
     width: 75%;
@@ -108,7 +109,7 @@ const LogoImageStyled = styled.img`
 
 const Navigation = () => {
   const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, ] = useState(true);
 
 
   const handleHomeClick = () => {
@@ -124,8 +125,6 @@ const Navigation = () => {
         block: 'start',
         inline: 'nearest',
       });
-
-      setIsMenuOpen(false);
     }
   }; 
 
