@@ -102,8 +102,8 @@ const Level1Adventure = () => {
       <BackgroundImage />
       <Container>
         <Card>
-          <Title>Eliumi and Uriechi, the old wise twins known as “The founding Fathers of Starknetia”</Title>
-          <SubText2>Legendary fighters and masters, have an important message for you: </SubText2>
+          <Title>Eliashi and Uriechi, the old wise twins known as “The founding Fathers of Starknetia”</Title>
+          <SubText2>Legendary fighters and masters, they have an important message for you: </SubText2>
           <SubText>
            </SubText>
            <ColumnContainer>
@@ -124,12 +124,7 @@ const Level1Adventure = () => {
           <Image src={Uri} alt="Right Image" />
           </ImageContainer>
           </SubTextLight>
-          </ColumnContainer>
-
-        
-            
-          
-
+          </ColumnContainer> 
         </Card>
       </Container>
     </Section>

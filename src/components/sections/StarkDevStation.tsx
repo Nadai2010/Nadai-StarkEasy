@@ -264,7 +264,7 @@ const TestYourSkills = () => {
         to deploy ERC-20, ERC-1155, AMM, Vault, or any other smart contract in Cairo that we want to include.
         </SlideTitle3>         
           <ButtonContainer>
-            <Button text="Standar Smart Contract in Starknet" link="/connect" />
+            <Button text="Smart Contract Standards in Starknet" link="/connect" />
           </ButtonContainer>  
         </Slide>
 
@@ -279,7 +279,7 @@ const TestYourSkills = () => {
         utility of each one.
         </SlideTitle3>          
           <ButtonContainer>
-            <Button text="Deploy Standar Smart Contract UDC" link="/connect" />
+            <Button text="Deploy Smart Contract Standards UDC" link="/connect" />
           </ButtonContainer> 
         </Slide>
 

@@ -189,7 +189,7 @@ const Level1History = () => {
             Welcome to the extraordinary world of Starknetia!
           </Title>
           <SubText2>
-            Your Learning dApp to learn about Starknet!
+           Starknetia is a big city-region in the magical World of Layera.
           </SubText2>
           <SubText>
            Get ready to embark on a martial arts adventure like no other. In this adventure, you will put yourself in the shoes of young students moving their first steps in the famous Martial Arts Academy of Starknetia, the StarkJitsu School.
