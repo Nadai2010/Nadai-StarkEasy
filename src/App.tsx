@@ -18,6 +18,7 @@ import StandarComponent from './components/Standar';
 import MulticallComponent from './components/Multicall';
 import UniversalComponent from './components/Universal';
 import Multicall2Component from './components/Multicall2';
+import StarkEasyENSComponent from './components/StarkEasyENS';
 import styled from 'styled-components';
 
 const DropdownContainer = styled.div`
@@ -70,7 +71,7 @@ const DropdownContent = styled.div<{ open: boolean }>`
 
 const DropdownItem = styled.button`
   width: 100%;
-  padding: 8px 16px;
+  padding: 8px 6px;
   background-color: white;
   border: none;
   cursor: pointer;
@@ -118,10 +119,10 @@ function App() {
                     <Link to="/hds" onClick={closeDropdowns}>Hds</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/starknet-es" onClick={closeDropdowns}>StarknetEs</Link>
+                    <Link to="/starknet-es" onClick={closeDropdowns}>🚧 StarknetEs</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/Workshop" onClick={closeDropdowns}>Workshop</Link>
+                    <Link to="/Workshop" onClick={closeDropdowns}>🚧 Workshop</Link>
                   </DropdownItem>
                 </DropdownContent>
               </DropdownContainer>
@@ -129,49 +130,52 @@ function App() {
           
             {/* Menú Stark Adventure */}
             <li className="mr-4">
-  <Link
-    to="/MenuStarkAdventure"
-    className="link"
-    style={{
-      fontFamily: 'teko, sans-serif',
-      fontSize: '30px',
-      margin: '0.5rem 0',
-      marginRight: '20px',
-      textDecoration: 'none',
-      color: '#000000', // Color de texto normal
-      transition: 'color 0.3s', // Transición suave para el cambio de color
-    }}
-    onMouseEnter={(e) => (e.currentTarget.style.color = '#FF0000')} // Cambiar el color al pasar el cursor
-    onMouseLeave={(e) => (e.currentTarget.style.color = '#000000')} // Restaurar el color al quitar el cursor
-  >
-    Stark Adventure
-  </Link>
-</li>
+            <Link
+              to="/MenuStarkAdventure"
+              className="link"
+              style={{
+                  fontFamily: 'teko, sans-serif',
+                  fontSize: '30px',
+                  margin: '0.5rem 0',
+                  marginRight: '20px',
+                  textDecoration: 'none',
+                  color: '#000000', // Color de texto normal
+                  transition: 'color 0.3s', // Transición suave para el cambio de color
+                }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#FF0000')} // Cambiar el color al pasar el cursor
+              onMouseLeave={(e) => (e.currentTarget.style.color = '#000000')} // Restaurar el color al quitar el cursor
+            >
+            Stark Adventure
+          </Link>
+          </li>
               
               {/* Menú Stark Dev-Station */}
               <DropdownContainer>
                 <DropdownButton onClick={toggleStarkDevStation}>Stark Dev-Station</DropdownButton>
                 <DropdownContent open={StarkDevStationOpen}>
                   <DropdownItem>
-                    <Link to="/TokenForm" onClick={closeDropdowns}>TokenForm</Link>
+                    <Link to="/TokenForm" onClick={closeDropdowns}>🚧 Token Form</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/NHS" onClick={closeDropdowns}>NHT</Link>
+                    <Link to="/NHS" onClick={closeDropdowns}>🚧 NHT</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/Comandos" onClick={closeDropdowns}>Terminal</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/Standar" onClick={closeDropdowns}>Standar</Link>
+                    <Link to="/Standar" onClick={closeDropdowns}>Standard</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/Universal" onClick={closeDropdowns}>Universal</Link>
+                    <Link to="/Universal" onClick={closeDropdowns}>🚧 Universal</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/Multicall" onClick={closeDropdowns}>Multicall</Link>
+                    <Link to="/Multicall" onClick={closeDropdowns}>🚧 Multicall</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/Multicall2" onClick={closeDropdowns}>Multicall x100</Link>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <Link to="/StarkEasyENS" onClick={closeDropdowns}>Stark Easy - ENS</Link>
                   </DropdownItem>
                 </DropdownContent>
               </DropdownContainer>
@@ -200,6 +204,7 @@ function App() {
                 <Route path="/Standar" element={<StandarPage />} />
                 <Route path="/Multicall" element={<MulticallPage />} />
                 <Route path="/Multicall2" element={<Multicall2Page />} />
+                <Route path="/StarkEasyENS" element={<StarkEasyENSPage />} />
                 <Route path="/Universal" element={<UniversalPage />} />
                 <Route path="/" element={<Navigate to="/TokenForm" />} />
               </>
@@ -253,6 +258,10 @@ function MulticallPage() {
 
 function Multicall2Page() {
   return <Multicall2Component />;
+}
+
+function StarkEasyENSPage() {
+  return <StarkEasyENSComponent />;
 }
 
 export default App;

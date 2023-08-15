@@ -5,8 +5,9 @@
 }
 
 .terminal-container {
-  width: 50%;
-  margin: 2% auto 5px;
+  width: 70%;
+  margin: 5% auto 5px;
+  height: auto;
   background-color: #1e1e1e;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;

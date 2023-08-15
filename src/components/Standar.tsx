@@ -38,7 +38,7 @@ const ContentContainer = styled.div`
   max-width: 150vh; /* Cambia el ancho máximo a 800px */
   height: auto; /* Cambia la altura fija a 400px */
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #EEF4FB;
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -92,6 +92,7 @@ const CopyStandarLink = styled.div`
 const ArgumentsStandarContent = styled.div`
   flex-grow: 1;
   overflow: auto;
+  background-color: white;
 `;
 
 const ArgumentsStandarList = styled.div`

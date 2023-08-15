@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
-import NetworkInfo from './NetworkInfo';
 import './Comandos.css';
 
 const Comandos = () => {
@@ -632,7 +631,7 @@ fn main() {
                   <pre>{functionCode}</pre>
                 </div>
                 <div >
-    <NetworkInfo />
+  
     </div>
               </div>
             )}
