@@ -1,15 +1,134 @@
 import React, { useState, useCallback } from 'react';
 import { useContractWrite } from '@starknet-react/core';
 import { parseFixed } from '@ethersproject/bignumber';
-import NetworkInfo from './NetworkInfo';
-import './Multicall.css';
+import styled, { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    
+  }
+`;
+
+const MulticallContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  width: 85%;
+  margin-left: 8%;
+  margin-top: 5%;
+`;
+
+const FormContainer = styled.div`
+  width: 60%;
+  height: 75vh;
+  margin: 0 auto;
+  margin-top: -5%;
+  background-color: rgba(173, 216, 230, 0.8); 
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+`;
+
+const MulticallTitle = styled.div`
+  font-size: 3rem;
+  color: #6b099c;
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    color: #50097c;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+`;
+
+const InputField = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 2px solid #ffffff;
+  background-color: #DCDCDC;
+  border-radius: 10px;
+`;
+
+const Label = styled.label`
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0.1rem;
+  margin-top: 4%;
+`;
+
+const Input = styled.input`
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+`;
+
+const CustomButton = styled.button`
+  display: inline-block;
+  background-color: #9d6af0;
+  color: ${(props) => props.theme.body};
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-top: 2%;
+  margin-bottom: 1rem; 
+  padding: 0.8rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Teko', sans-serif;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  &:hover {
+    background-color: #6b099c;
+    transform: scale(1.05);
+  }
+
+  &:hover:before {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+`;
 
 const Multicall = () => {
   const [to, setTransferTo] = useState('');
   const [transferAmount, setTransferAmount] = useState('');
   const [transferAmount2, setTransferAmount2] = useState('');
   const [mintNai, setMintNai] = useState('');
-  const [selectedValues, setSelectedValues] = useState({});
 
   const transferTx = {
     contractAddress: '0x07686ccbe3e33aefec722bd7211e42e47269f16a2a918318bdb27a99c926899b',
@@ -35,78 +154,48 @@ const Multicall = () => {
     write();
   }, [write]);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, label: string, setValue: Function) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, _label: string, setValue: Function) => {
     const value = e.target.value;
     setValue(value);
-
-    setSelectedValues((prevState) => ({
-      ...prevState,
-      [label]: value,
-    }));
   };
 
   return (
     <div>
-    <div className="multicall-title text-4xl shadowed mb-5">Multicall</div>
+      <GlobalStyles />
+      <MulticallContainer>
+        <FormContainer>
 
-    <div className="multicall-container">
-    <div className="input-field">
-          <label>Dirección de Envío</label>
-          <input
-            type="text"
-            value={to}
-            onChange={(e) => handleInputChange(e, 'Dirección de Envío', setTransferTo)}
-          />
-        </div>
-  
-        <div className="input-field">
-          <label>Cantidad Mint de NAI</label>
-          <input
-            type="number"
-            value={mintNai}
-            onChange={(e) => handleInputChange(e, 'Cantidad Mint de NAI', setMintNai)}
-          />
-        </div>
-  
-        <div className="input-field">
-          <label>Cantidad de Transfer de NAI</label>
-          <input
-            type="number"
-            value={transferAmount}
-            onChange={(e) => handleInputChange(e, 'Cantidad de Transfer de NAI', setTransferAmount)}
-          />
-        </div>
-  
-        <div className="input-field">
-          <label>Cantidad de Transfer de ETH</label>
-          <input
-            type="number"
-            value={transferAmount2}
-            onChange={(e) => handleInputChange(e, 'Cantidad de Transfer de ETH', setTransferAmount2)}
-          />
-        </div>
-  
-        <div className="btn-container">
-          <button className="btn" onClick={handleTransfer}>
-            Multi Envío y Mint
-          </button>
-        </div>
-  
-        <div className="selected-values">
-          {Object.entries(selectedValues).map(([label, value]) => (
-            <span key={label} className={`selected-value ${label.toLowerCase().replace(/\s/g, '-')}`}>
-              {`${label}: ${value}`}
-            </span>
-          ))}
-        </div>
-        <div >
-    <NetworkInfo />
-    </div>
-      </div>
+          <MulticallTitle>
+            <span>STARK Multicall</span>
+          </MulticallTitle>
+
+          <InputField>
+            <Label>Dirección de Envío</Label>
+            <Input type="text" value={to} onChange={(e) => handleInputChange(e, 'Dirección de Envío', setTransferTo)} />
+            
+            <Label>Cantidad Mint de NAI</Label>
+            <Input type="number" value={mintNai} onChange={(e) => handleInputChange(e, 'Cantidad Mint de NAI', setMintNai)} />
+                   
+            <Label>Cantidad de Transfer de NAI</Label>
+            <Input
+              type="number"
+              value={transferAmount}
+              onChange={(e) => handleInputChange(e, 'Cantidad de Transfer de NAI', setTransferAmount)}
+            />
+                
+            <Label>Cantidad de Transfer de ETH</Label>
+            <Input
+              type="number"
+              value={transferAmount2}
+              onChange={(e) => handleInputChange(e, 'Cantidad de Transfer de ETH', setTransferAmount2)}
+            />
+        
+          <CustomButton onClick={handleTransfer}>Multi Envío y Mint</CustomButton>
+          </InputField>
+        </FormContainer>
+      </MulticallContainer>
     </div>
   );
-  
 };
-
 
 export default Multicall;

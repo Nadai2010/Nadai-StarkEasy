@@ -38,12 +38,14 @@ const ContentContainer = styled.div`
   max-width: 150vh; /* Cambia el ancho máximo a 800px */
   height: auto; /* Cambia la altura fija a 400px */
   margin: 0 auto;
-  background-color: #EEF4FB;
+  background-color: rgba(238, 244, 251, 0.9);
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   padding: 2rem;
   text-align: center;
 `;
+
+
 
 const FunctionStandarSelectContainer = styled.div`
   margin-bottom: 20px;

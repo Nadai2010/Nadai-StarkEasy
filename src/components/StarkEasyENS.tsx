@@ -10,7 +10,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f8f8f8;
   }
 `;
 
@@ -26,7 +25,7 @@ const FormContainer = styled.div`
   height: auto;
   margin: 0 auto;
   margin-top: 150px;
-  background-color: #ECCFF4;
+  background-color: rgba(236, 207, 244, 0.9);
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   padding: 2rem;

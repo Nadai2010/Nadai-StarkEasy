@@ -157,7 +157,7 @@ function App() {
                     <Link to="/TokenForm" onClick={closeDropdowns}>🚧 Token Form</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/NHS" onClick={closeDropdowns}>🚧 NHT</Link>
+                    <Link to="/NHS" onClick={closeDropdowns}>NHT</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/Comandos" onClick={closeDropdowns}>Terminal</Link>
@@ -166,10 +166,10 @@ function App() {
                     <Link to="/Standar" onClick={closeDropdowns}>Standard</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/Universal" onClick={closeDropdowns}>🚧 Universal</Link>
+                    <Link to="/Universal" onClick={closeDropdowns}>Universal</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/Multicall" onClick={closeDropdowns}>🚧 Multicall</Link>
+                    <Link to="/Multicall" onClick={closeDropdowns}>Multicall</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/Multicall2" onClick={closeDropdowns}>Multicall x100</Link>

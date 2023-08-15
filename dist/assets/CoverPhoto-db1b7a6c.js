@@ -1,4 +1,4 @@
-import{s,j as t}from"./index-c2e22e1b.js";const a="/assets/Stark_easy-a48af606.gif",e=s.div`
+import{s,j as t}from"./index-01d6f683.js";const a="/assets/Stark_easy-a48af606.gif",e=s.div`
   width: 100%;
 
   img {
