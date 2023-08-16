@@ -54,7 +54,7 @@ const FunctionStandarSelectContainer = styled.div`
 
 const Label = styled.label`
   font-size: 25px;
-  margin-right: 50vh;
+  margin-right: 40vh;
 `;
 
 const StyledSelect = styled.select`
