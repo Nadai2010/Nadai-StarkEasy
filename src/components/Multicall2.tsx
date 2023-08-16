@@ -61,6 +61,7 @@ const InputField = styled.div`
   margin-bottom: 1.5rem;
 `;
 
+
 const Label = styled.label`
   font-size: 1.5rem;
   color: #777;
@@ -127,7 +128,7 @@ const Multicall2 = () => {
   const mintTxArray = Array(100).fill(0).map((_, index) => ({
     contractAddress: '0x07686ccbe3e33aefec722bd7211e42e47269f16a2a918318bdb27a99c926899b',
     entrypoint: 'mint',
-    calldata: [mintNai ? parseFixed(mintNai, 18).toString() : '0', index.toString()],
+    calldata: [mintNai ? parseFixed(mintNai, 18).toString() : '0', (parseFixed('0', 0).mul(index)).toString()],
   }));
 
   const { write } = useContractWrite({ calls: mintTxArray });
@@ -135,6 +136,8 @@ const Multicall2 = () => {
   const handleMint = useCallback(() => {
     write();
   }, [write]);
+
+
 
   return (
     <div>
@@ -165,7 +168,7 @@ const Multicall2 = () => {
           </MulticallTitle>
 
           <InputField>
-            <Label>Cantidad Mint de NAI</Label>
+            <Label>Amount of NAI to Mint</Label>
             <Input
               type="number"
               value={mintNai}
@@ -174,7 +177,7 @@ const Multicall2 = () => {
           </InputField>
 
           <CustomButton onClick={handleMint}>
-            Mint NAI 100 veces
+          Mint NAI x100
           </CustomButton>
 
         </FormContainer>

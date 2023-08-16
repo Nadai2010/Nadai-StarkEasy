@@ -170,27 +170,27 @@ const Multicall = () => {
           </MulticallTitle>
 
           <InputField>
-            <Label>Dirección de Envío</Label>
-            <Input type="text" value={to} onChange={(e) => handleInputChange(e, 'Dirección de Envío', setTransferTo)} />
+            <Label>Recipient Address</Label>
+            <Input type="text" value={to} onChange={(e) => handleInputChange(e, 'Recipient Address', setTransferTo)} />
             
-            <Label>Cantidad Mint de NAI</Label>
-            <Input type="number" value={mintNai} onChange={(e) => handleInputChange(e, 'Cantidad Mint de NAI', setMintNai)} />
+            <Label>Amount of NAI to Mint</Label>
+            <Input type="number" value={mintNai} onChange={(e) => handleInputChange(e, 'Amount of NAI to Mint', setMintNai)} />
                    
-            <Label>Cantidad de Transfer de NAI</Label>
+            <Label>Amount of NAI to Transfer</Label>
             <Input
               type="number"
               value={transferAmount}
-              onChange={(e) => handleInputChange(e, 'Cantidad de Transfer de NAI', setTransferAmount)}
+              onChange={(e) => handleInputChange(e, 'Amount of NAI to Transfer', setTransferAmount)}
             />
                 
-            <Label>Cantidad de Transfer de ETH</Label>
+            <Label>Amount of ETH to Transfer</Label>
             <Input
               type="number"
               value={transferAmount2}
-              onChange={(e) => handleInputChange(e, 'Cantidad de Transfer de ETH', setTransferAmount2)}
+              onChange={(e) => handleInputChange(e, 'Amount of ETH to Transfer', setTransferAmount2)}
             />
         
-          <CustomButton onClick={handleTransfer}>Multi Envío y Mint</CustomButton>
+          <CustomButton onClick={handleTransfer}>Send Multicall</CustomButton>
           </InputField>
         </FormContainer>
       </MulticallContainer>

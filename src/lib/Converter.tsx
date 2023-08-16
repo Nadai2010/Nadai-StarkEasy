@@ -125,7 +125,7 @@ const Converter: React.FC<ConverterProps> = ({ onConvert }) => {
     return (
         <div>
             <InputField>
-                <InputLabel>Convert any name you're going to register in Stark Easy ENS to Felt</InputLabel>
+                <InputLabel>Convert any StarkEasy name into Felt</InputLabel>
                 <InputWrapper>
                     <Input
                         value={input}

@@ -102,7 +102,7 @@ const Level1AdventureEs = () => {
       <BackgroundImage />
       <Container>
         <Card>
-          <Title>Eliumi y Uriechi, los viejos sabios gemelos conocidos como “los padres fundadores de Starknetia”</Title>
+          <Title>Eliashi y Uriechi, los viejos sabios gemelos conocidos como “los padres fundadores de Starknetia”</Title>
           <SubText2>Maestros y luchadores legendarios, tenemos un mensaje importante para ustedes: </SubText2>
           <SubText>
            </SubText>

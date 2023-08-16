@@ -593,9 +593,9 @@ fn main() {
   
         <div className="terminal-footer">
           <div className="function-container">
-            <h2>Ejemplos Cairo - Ejecuta los comandos que encontrarán al final de cada función con //</h2>
+            <h2>Examples Cairo - Execute the commands that you will find at the end of each function with //</h2>
             <div className="function-select-container">
-              <label htmlFor="function-select">Selecciona una Ejemplo:</label>
+              <label htmlFor="function-select">Select an Example:</label>
               <select
                 id="function-select"
                 value={selectedFunction}

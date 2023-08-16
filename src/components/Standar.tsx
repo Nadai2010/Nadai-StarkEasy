@@ -271,7 +271,7 @@ const Standar = () => {
               </Title>
     
               <FunctionStandarSelectContainer>
-               <Label htmlFor="functionstandar-select">Escoge tu contrato y sus Argumentos para un Deploy Sencillo:</Label>
+               <Label htmlFor="functionstandar-select">Choose your contract and its Arguments for a Simple Deployment:</Label>
                  <StyledSelect
                   id="functionstandar-select"
                   value={selectedFunction}

@@ -158,12 +158,12 @@ const StarkEasyENS = () => {
         <AppContainer>
             <FormContainer>
               <StarkEasyENSTitle>
-                <span>Register you Name in Stark Easy ENS </span>
+                <span>Register your Name in StarkEasy ENS </span>
                 </StarkEasyENSTitle>
 
           <InputField>
           <Converter onConvert={handleConvert} />
-            <Label>Nombre para registar con el Contrato de Cuenta que está conectado</Label>
+            <Label>Name to be registered with the address you’re connected with on StarkEasy</Label>
              <InputWrapper>
               <Input
               type="number"
