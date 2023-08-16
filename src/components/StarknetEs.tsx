@@ -2,6 +2,11 @@ import { useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
 
+import imagen from '../assets/StarkNet-en-Español.png';
+import CairoBookImage from '../assets/CairoBook.png'
+import StarknetBookImage from '../assets/StarknetBook.png'
+import StarknetDocImage from '../assets/StarknetDoc.png'
+import CairoDocImage from '../assets/CairoDoc.png'
 
 interface Resource {
   id: string;
@@ -17,11 +22,13 @@ const StarknetEsContainer = styled.div`
   align-items: center;
   padding: 20px;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 150vh;
   box-sizing: border-box;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: -20px;
+  
 
   /* Establecer un espacio entre los videos y las cartas */
   gap: 20px;
@@ -32,26 +39,67 @@ const StarknetEsContainer = styled.div`
   }
 `;
 
-const Title = styled.div`
-  font-size: 35px;
-  line-height: 1.5;
-  font-weight: 400;
-  margin-bottom: 20px;
-  text-align: center;
+const TitleText = styled.h2`
+  font-size: 4rem;
+  color: #6b099c;
+  margin-bottom: 1rem;
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
 `;
+
+const SubTitle = styled.h2`
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1rem;
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40px;
+}
+`;
+
+const TitleText2 = styled.h2`
+  font-size: 4rem;
+  color: #6b099c;
+  margin-bottom: 1rem;
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const TitleImage = styled.img`
+  width: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 150px;
+
+`;
+
 
 const VideoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
+  min-height: 70vh;
 `;
 
 const VideoGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Mostrar dos videos en horizontal en pantallas grandes */
-  grid-gap: 20px;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 60px;
+  margin-bottom: 2.5rem;
   justify-items: center; /* Centrar los elementos en el grid */
 
   /* Ajuste para dispositivos móviles */
@@ -65,13 +113,16 @@ const VideoItem = styled.div`
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  padding-bottom: 56.25%; /* Mantener el formato 16:9 */
-  width: 100%; /* Asegurar que los videos ocupen el 100% del contenedor */
-
-  /* Establecer un tamaño mínimo y máximo para el contenedor del video */
-  min-width: 280px;
-  max-width: 600px;
+  padding-bottom: 56.25%;
+  width: 100%;
+  min-width: 75vh;
+  transition: transform 0.3s; 
+  
+  &:hover {
+    transform: scale(1.1); 
+  }
 `;
+
 
 const VideoPlayer = styled(YouTube)`
   position: absolute;
@@ -96,7 +147,7 @@ const CardContainer = styled.div`
 
 const Button = styled.button`
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 15px 60px;
   font-size: 16px;
   font-weight: bold;
   background-color: #f33adaa1;
@@ -104,12 +155,13 @@ const Button = styled.button`
   border: none;
   border-radius: 4px;
   transition: background-color 0.3s;
-  margin: 0 5px;
+  margin: 0 30vh 0 35vh; /* Agregar margen derecho y ajustar margen izquierdo */
 
   &:hover {
     background-color: #4f007cfb;
   }
 `;
+
 
 const ResourceContainer = styled.div`
   display: flex;
@@ -119,20 +171,7 @@ const ResourceContainer = styled.div`
   width: 100%;
 `;
 
-const ResourceTitle = styled.div`
-  font-size: 30px;
-  line-height: 1.5;
-  font-weight: 400;
-  margin-bottom: 20px;
-  text-align: center;
-`;
 
-const ResourceGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: 20px;
-  margin-top: 5px;
-`;
 
 const ResourceCard = styled.div`
   display: flex;
@@ -144,7 +183,8 @@ const ResourceCard = styled.div`
   cursor: pointer;
   transition: transform 0.3s;
   width: 100%;
-  max-width: 280px;
+  max-width: 80%;
+  margin-bottom: 10px;
 `;
 
 const ResourceImage = styled.img`
@@ -159,7 +199,23 @@ const ResourceDetails = styled.div`
   display: none;
 `;
 
+const ResourceGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+  /* Ajuste para dispositivos móviles */
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
+`;
+
 const ResourceCardWrapper = styled.div`
+  flex: 1;
+  max-width: 280px;
+  margin-bottom: 10px;
+
   &:hover ${ResourceCard} {
     border-color: #a93af3;
     transform: scale(1.1);
@@ -208,36 +264,43 @@ const ResourceDetailsLink = styled.a`
   text-decoration: none;
 `;
 
+const ThemeContainer = styled.div`
+  background-color: #ff7f50; /* Color de fondo o tema deseado */
+  padding: 20px; 
+  width: 100%; /* Ancho al 100% */
+  min-height: 100vh; /* Altura al 100% del alto visible */
+`;
+
 // Datos de recursos
 
 const resources: Resource[] = [
   {
     id: '1',
-    image: '../src/assets/StarknetBook.png',
+    image: StarknetBookImage,
     title: 'Starknet Book',
     description: 'El libro de todo el ecosistema de Starknet, una documentación exhaustiva de arquitectura, y Starknet general, Starknet Book',
     link: 'https://book.starknet.io/',
   },
   {
     id: '2',
-    image: '../src/assets/CairoBook.png',
-    title: 'Título del Recurso 2',
-    description: 'Descripción del Recurso 2',
+    image: CairoBookImage,
+    title: 'Cairo Book',
+    description: 'Descubre el libro de Aprendizaje sobre el Lenguaje de Programación Cairo y domina su sintaxis.',
     link: 'https://cairo-book.github.io/',
   },
   {
     id: '3',
-    image: '../src/assets/CairoBook.png',
-    title: 'Título del Recurso 2',
-    description: 'Descripción del Recurso 2',
-    link: 'https://cairo-book.github.io/',
+    image: StarknetDocImage,
+    title: 'Starknet Doc',
+    description: 'Documentos oficiales en General de Starknet',
+    link: 'https://docs.starknet.io/documentation/',
   },
   {
     id: '4',
-    image: '../src/assets/CairoBook.png',
-    title: 'Título del Recurso 2',
-    description: 'Descripción del Recurso 2',
-    link: 'https://cairo-book.github.io/',
+    image: CairoDocImage,
+    title: 'Cairo Doc',
+    description: 'Documentos oficiales en General de Cairo',
+    link: 'https://www.cairo-lang.org/docs/',
   },
 ];
 
@@ -272,7 +335,11 @@ const StarknetEs = () => {
 
   return (
     <StarknetEsContainer>
-      <Title>Starknet en Español</Title>
+    <TitleContainer>
+      <TitleText>Starknet en Español</TitleText>
+    </TitleContainer>
+    <SubTitle>Jueves De Cairo</SubTitle>
+
       <VideoContainer>
         <VideoGrid>
           <VideoItem>
@@ -289,10 +356,14 @@ const StarknetEs = () => {
           <Button className="starknet-es-next-button" onClick={goToNextVideo}>
             Siguiente
           </Button>
+
         </div>
       </VideoContainer>
+      
+          <ThemeContainer>
       <ResourceContainer>
-        <ResourceTitle>Recursos Starknet</ResourceTitle>
+      <TitleText2>Recursos Starknet</TitleText2>
+        <TitleImage src={imagen} alt="Imagen" />
         <CardContainer>
           <ResourceGrid>
             {resources.map((resource) => (
@@ -322,7 +393,8 @@ const StarknetEs = () => {
             </ResourceDetailsContainer>
           </ResourceDetailsOverlay>
         )}
-      </ResourceContainer>
+      </ResourceContainer>      
+      </ThemeContainer>
    </StarknetEsContainer>
 );
 };

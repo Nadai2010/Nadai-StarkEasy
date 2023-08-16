@@ -117,7 +117,7 @@ function App() {
                     <Link to="/hds" onClick={closeDropdowns}>Hds</Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <Link to="/starknet-es" onClick={closeDropdowns}>🚧 StarknetEs</Link>
+                    <Link to="/starknet-es" onClick={closeDropdowns}>StarknetEs</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/Workshop" onClick={closeDropdowns}>🚧 Workshop</Link>
