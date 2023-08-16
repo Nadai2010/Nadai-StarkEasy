@@ -5,8 +5,10 @@ const ImageContainer = styled.div`
   width: 100%;
 
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-top: 2%;
+    margin-left: 10%;
     border-radius: 20px; /* adjust this to achieve desired roundness */
   }
 
