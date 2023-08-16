@@ -5,8 +5,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-right: 150px;
-  margin-left: -80px;
+  margin-right: 0px;
+  margin-left: 10px;
 
   @media (min-width: 768px) {
     flex-direction: row;

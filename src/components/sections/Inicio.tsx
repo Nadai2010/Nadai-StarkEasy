@@ -10,6 +10,8 @@ const Section = styled.section`
   width: 100vw;
   position: relative;
   background-color: ${(props) => props.theme.body};
+  font-family: 'Pacifico', cursive;
+  font-size: 0.9rem;
 `;
 const Container = styled.div`
   width: 80%;

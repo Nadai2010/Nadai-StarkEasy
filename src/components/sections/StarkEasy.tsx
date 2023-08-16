@@ -166,6 +166,7 @@ const ButtonContainer = styled.div`
   margin: 1rem auto;
   display: flex;
   align-self: center; /* Ajustado a "center" para centrar el botón */
+  margin-right: -2%;
 
   button {
     margin: 0 auto;
@@ -215,7 +216,7 @@ const StarkEasy = () => {
             program, presented by Nadai & Nurstar.
           </SubTextLight>
           <ButtonContainer>
-            <Button text="Go on a Stark Adventure" link="/connect" />
+            <Button text="Begin your Stark Easy Experience" link="/connect" />
           </ButtonContainer>
         </Box>
       </Container>

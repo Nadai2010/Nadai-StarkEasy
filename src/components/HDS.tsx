@@ -152,7 +152,7 @@ const secretWords: SecretWords = {
   playa: "0x0266fa8b7380043135c23b862be06a942adb955fef7a46e1b8c7d73d7b48befd",
   jugar: "0x02269df2f4cae317c90fdcb1a8fa8fbe21744ac9e197721ecaa3baf14c1b3571",
   planeta: "0x018561e9475a9248f0580e3274fb8a027b33850dbd2e53f2d6acb9c14fcd0599",
-  word10: "0",
+  comunidad: "0x0198c2f9ab62f372faed2ea77126d40b8a50df7a377b62d0a809562d438af549",
 };
 
 const HDS = () => {

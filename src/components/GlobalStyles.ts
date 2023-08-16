@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     justify-content: space-between;
     align-items: center;
     font-size: 25px; 
-    width: 85%;
+    width: 95%;
     height: 60px;
     margin: 0 auto;
   }

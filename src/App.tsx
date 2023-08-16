@@ -106,11 +106,9 @@ function App() {
       <div className="h-full p-4 flex flex-col">
         {isConnected && (
           <nav className="mb-4">
-            <ul className="flex justify-center items-center">
-              <li className="mr-4">
-                <Info />
-              </li>
-              
+                       
+             <Info />
+             
               {/* Menú Stark Jitsu */}
               <DropdownContainer>
                 <DropdownButton onClick={toggleStarkJitsu}>Stark Jitsu</DropdownButton>
@@ -129,7 +127,6 @@ function App() {
               
           
             {/* Menú Stark Adventure */}
-            <li className="mr-4">
             <Link
               to="/MenuStarkAdventure"
               className="link"
@@ -145,9 +142,9 @@ function App() {
               onMouseEnter={(e) => (e.currentTarget.style.color = '#FF0000')} // Cambiar el color al pasar el cursor
               onMouseLeave={(e) => (e.currentTarget.style.color = '#000000')} // Restaurar el color al quitar el cursor
             >
-            Stark Adventure
+            Stark Adobencha
           </Link>
-          </li>
+        
               
               {/* Menú Stark Dev-Station */}
               <DropdownContainer>
@@ -180,11 +177,9 @@ function App() {
                 </DropdownContent>
               </DropdownContainer>
              
-              <li className="ml-auto mr-4">
-                <SignForm />
-              </li>
-              <Logo />
-            </ul>
+          <SignForm />
+        <Logo />
+           
           </nav>
         )}
 

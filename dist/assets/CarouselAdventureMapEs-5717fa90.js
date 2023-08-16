@@ -1,4 +1,4 @@
-import{s as t,j as s,S as e}from"./index-a51040d5.js";const r=t.div`
+import{s as t,j as s,S as e}from"./index-5241c94e.js";const r=t.div`
   width: 100%;
 
   img {

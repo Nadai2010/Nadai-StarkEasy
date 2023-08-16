@@ -90,7 +90,7 @@ const SlideTitle3 = styled.div`
   align-self: flex-start;
   width: 80%;
   margin: 5px auto; /* Ajuste del margen */
-  margin-top: 5px;
+  margin-top: 2%;
   text-align: center;
   
 

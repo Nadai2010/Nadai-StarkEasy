@@ -16,7 +16,6 @@ const Container = styled.div`
 const Button = styled.button`
   padding: 10px 10px;
   font-size: 16px;
-  margin-left: 70px; // Alinea el botón a la derecha ajustando automáticamente el margen izquierdo
   font-weight: bold;
   background-color: #4f007cfb;
   color: rgba(255, 255, 255, 0.87);
