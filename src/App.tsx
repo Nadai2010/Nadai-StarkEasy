@@ -151,7 +151,7 @@ function App() {
                 <DropdownButton onClick={toggleStarkDevStation}>Stark Dev-Station</DropdownButton>
                 <DropdownContent open={StarkDevStationOpen}>
                   <DropdownItem>
-                    <Link to="/TokenForm" onClick={closeDropdowns}>🚧 Token Form</Link>
+                    <Link to="/TokenForm" onClick={closeDropdowns}>Token Form</Link>
                   </DropdownItem>
                   <DropdownItem>
                     <Link to="/NHS" onClick={closeDropdowns}>NHT</Link>

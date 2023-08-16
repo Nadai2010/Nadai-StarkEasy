@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import YouTube from 'react-youtube';
 import styled from 'styled-components';
-import NetworkInfo from './NetworkInfo';
+
 
 interface Resource {
   id: string;
@@ -323,9 +323,6 @@ const StarknetEs = () => {
           </ResourceDetailsOverlay>
         )}
       </ResourceContainer>
-      <div >
-    <NetworkInfo />
-    </div>
    </StarknetEsContainer>
 );
 };

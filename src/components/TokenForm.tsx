@@ -1,13 +1,123 @@
+import { useState } from "react";
+import { FormEvent, useMemo } from "react";
 import { useAccount, useBalance, useContractWrite } from "@starknet-react/core";
-import { FormEvent, useMemo, useState } from "react";
 import { uint256, stark } from "starknet";
-import { truncate } from "../lib/utils";
 import { parseFixed } from "@ethersproject/bignumber";
-import "./TokenForm.css";
-import NetworkInfo from "./NetworkInfo";
+import styled, { createGlobalStyle } from 'styled-components';
 
+const GlobalStyles = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'teko', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+`;
 
-// Array de tokens ERC20
+const TokenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: -0.2rem auto;
+  max-width: 50%;
+`;
+
+const TokenFormContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(112,128,144, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 90%;
+`;
+
+const TokenTitle = styled.h2`
+  font-size: 3.8rem;
+  color: #6b099c;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  text-align: center;
+`;
+
+const Select = styled.select`
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+`;
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Field = styled.input`
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  width: 85vh;
+`;
+
+const Button = styled.button`
+  background-color: #9d6af0;
+  color: white;
+  border: none;
+  padding: 0.5rem 4rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 0.7rem ;
+
+  &:hover {
+    background-color: #6b099c;
+    transform: scale(1.05);
+  }
+`;
+
+const TransactionLink = styled.a`
+  color: blue;
+  text-decoration: underline;
+  font-size: 1.4rem; 
+  &:hover {
+    color: darkblue;
+    text-decoration: underline;
+  }
+`;
+
+const PendingText = styled.p`
+  font-size: 1.6rem; /* Adjust the font size as needed */
+`;
+
+const Link = styled.a`
+  color: blue;
+  text-decoration: none;
+  font-size: 1.9rem !important;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }
+`;
+
+const LargeText = styled.strong`
+  font-size: 2.2rem;
+  margin-bottom: -0.7rem;
+`;
+
 const tokens = [
   {
     symbol: "NAI",
@@ -31,7 +141,6 @@ const tokens = [
   },
   // Agrega más tokens si es necesario
 ];
-
 
 export default function TokenForm() {
   const { address } = useAccount();
@@ -80,69 +189,82 @@ export default function TokenForm() {
     setShowButton(event.target.value === "Nadai"); 
   }
 
+
+
   return (
-    <div className="token-form">
-      <div>
-        <h3>
-          {selectedToken?.symbol} token{" "}
-          <a
-            href={`https://goerli.voyager.online/contract/${selectedToken?.contractAddress}`}
+    <div>
+      <GlobalStyles />
+      <TokenContainer>
+        <TokenFormContainer>
+          <TokenTitle>Balance and Send the Tokens</TokenTitle>
+          <LargeText>
+            Balance: {balance?.formatted} {selectedToken?.symbol}
+          </LargeText>
+          <Link
+            href={`https://testnet.starkscan.co/contract/${selectedToken?.contractAddress}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {truncate(selectedToken?.contractAddress)} ↗
-          </a>
-        </h3>
-        <strong>
-          Balance: {balance?.formatted} {selectedToken?.symbol}
-        </strong>
-        <form onSubmit={send}>
-          <select
-            value={selectedToken?.symbol}
-            onChange={(e) => {
-              const selected = tokens.find((t) => t.symbol === e.target.value);
-              if (selected) setSelectedToken(selected);
-            }}
-          >
-            {tokens.map((token) => (
-              <option key={token.symbol} value={token.symbol}>
-                {token.symbol}
-              </option>
-            ))}
-          </select>
-          <input
-            type="text"
-            name="to"
-            placeholder="Recipient"
-            required
-            onChange={(e) => setTo(e.target.value)}
-          />
-          <input
-            type="number"
-            name="amount"
-            placeholder="Amount"
-            required
-            step="any"
-            onChange={(e) => setAmount(e.target.value)}
-          />
-          <input
-            type="password"
-            name="secretWord"
-            placeholder="Secret Word"
-            required
-            value={secretWord}
-            onChange={handleSecretWordChange}
-          />
-          {showButton && (
-            <button type="submit" className="btn-submit">
-              Enviar
-            </button>
-          )}
-        </form>
-        {isLoading && <p>tx pendiente...</p>}
-        {data && <p>Tx: {data.transaction_hash}</p>}
-      </div>
-      <NetworkInfo />
+            {`${selectedToken?.symbol} - ${selectedToken?.contractAddress.slice(0, 8)}...${selectedToken?.contractAddress.slice(-8)} ↗`}
+          </Link>
+          <div>
+            <Form onSubmit={send}>
+              <Select
+                value={selectedToken?.symbol}
+                onChange={(e) => {
+                  const selected = tokens.find((t) => t.symbol === e.target.value);
+                  if (selected) setSelectedToken(selected);
+                }}
+              >
+                {tokens.map((token) => (
+                  <option key={token.symbol} value={token.symbol}>
+                    {token.symbol}
+                  </option>
+                ))}
+              </Select>
+              <Field
+                type="text"
+                name="to"
+                placeholder="Recipient"
+                required
+                onChange={(e) => setTo(e.target.value)}
+              />
+              <Field
+                type="number"
+                name="amount"
+                placeholder="Amount"
+                required
+                step="any"
+                onChange={(e) => setAmount(e.target.value)}
+              />
+              <Field
+                type="password"
+                name="secretWord"
+                placeholder="Secret Word Nadai"
+                required
+                value={secretWord}
+                onChange={handleSecretWordChange}
+              />
+              {showButton && (
+                <Button type="submit">Send</Button>
+              )}
+            </Form>
+            {isLoading && <PendingText>Transaction pending...</PendingText>}
+            {data &&   
+            <p>
+              <span style={{ fontSize: "1.5rem" }}>Tx:</span>{" "}
+              <TransactionLink
+                href={`https://testnet.starkscan.co/tx/${data.transaction_hash}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data.transaction_hash.slice()}
+                </TransactionLink>
+            </p>}
+          </div>
+          {/* ... */}
+        </TokenFormContainer>
+      </TokenContainer>
     </div>
   );
 }
