@@ -92,8 +92,8 @@ const LogoContainer = styled.div`
 
 
 const LogoImageStyled = styled.img`
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
