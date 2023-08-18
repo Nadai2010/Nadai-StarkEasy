@@ -99,24 +99,24 @@ Esta pestaña está diseñada para desplegar contratos con un solo clic, utiliza
 
 Adicionalmente, proporcionaremos los pasos necesarios para convertir los valores a felt252, junto con una explicación y utilidad de cada uno.
 
-![Alt text](image-17.png)
+![Alt text](universal.png)
 
 #### Multicall:
 Esta pestaña servirá para aprender el poder de Multicall nativo en Cairo. En este formulario, se puede `Mintear` el token `NAI` y transferir tanto `NAI`como `ETH`si así se desea, ejecutando 3 llamadas diferentes, cada una con su propio conjunto de datos (`Calldata`).
 
 En esta sección, podemos enseñar cómo ya no se necesitan aprobaciones infinitas y cómo los protocolos DeFi en Starknet se benefician de este poder. La idea es agregar varios formularios de Multicall, incluido uno para UDC, y utilizar los parámetros necesarios para cada despliegue, brindando una forma sencilla para que los desarrolladores desplieguen ERC-20, ERC-1155, AMM, Vault o cualquier otro contrato inteligente en Cairo que deseemos agregar.
 
-![Alt text](image-19.png)
+![Alt text](multicall.png)
 
 #### Multicall x100:
 En esta pestaña podra hacer una multicall en la que llames 100 veces a mitn la cantidad de mint selcciona, todo en 1 transasacioon pero en 100 multillamads en un a transacions
 
-![Alt text](image-18.png)
+![Alt text](multicalx100.png)
 
 #### STARK Easy - ENS:
 En esta sección contamos con un convertidor de felt, el cual le será de mucha utilidad si queiere usar el contraro de STARK Easy ENS, en el cual podrá reguistra su nombre asociada a la wallet que este coenctado, para tener un registro de su nombre con varios fines, en este caso hipotetcio inluso para saber assistensias a workshop segun horario del mint del PoaP.
 
-![Alt text](image-20.png)
+![Alt text](ens.png)
 
 ## Desarrollo y Reconocimientos
 En esta sección, deseamos reconocer a aquellos que han contribuido directa o indirectamente en el desarrollo y concepción de Stark Easy.
