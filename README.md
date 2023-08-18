@@ -1,19 +1,13 @@
 <div align="center">
-<img alt="starknet logo" src="https://github.com/Nadai2010/Nadai-SHH/blob/main/src/assets/image-9.png" width="600" >
+<img alt="starknet logo" src="" width="600" >
   <h1 style="font-size: larger;">
-    <img src="https://github.com/Nadai2010/Nadai-SHARP-Starknet/blob/master/im%C3%A1genes/Starknet.png" width="40">
-    <strong>Nadai's Cairo Learning dApp</strong> 
-    <img src="https://github.com/Nadai2010/Nadai-SHARP-Starknet/blob/master/im%C3%A1genes/Starknet.png" width="40">
+    <img src="" width="40">
+    <strong>STARK Easy</strong> 
+    <img src="" width="40">
   </h1>
 
-<a href="https://github.com/Starknet-Es">
-<img src="https://img.shields.io/badge/Overview Starknet Es-Github-yellow"
-/>
-<a href="https://github.com/Starknet-Es/jueves-de-cairo">
-<img src="https://img.shields.io/badge/Jueves Cairo-Youtube-red?logo=youtube"/>
 </a>
-</a>
-<a href="https://twitter.com/StarkNetEs">
+<a href="https://twitter.com/StarkEasy_">
 <img src="https://img.shields.io/twitter/follow/StarknetEs?style=social"/>
 </a>
 <a href="https://twitter.com/Nadai02010">
@@ -22,197 +16,91 @@
 <a href="https://twitter.com/0xNurstar">
 <img src="https://img.shields.io/twitter/follow/0xNurstar?style=social"/>
 </a>
-<a href="https://github.com/Starknet-Es/StarknetEs-Aprendizaje">
 </div>
 
-# Summary
-This is a test version of an application wich features serveral differents resources. The goal of this dApp is helping new developers to learn the Cairo programming language and onboarding them into Starknet in a fun and interactive way.
+## Stark Easy
+En este documento, exploraremos la creación de Stark Easy, enfocándonos en sus principios y visión. Nuestra meta es establecer una biblioteca integral que abarque todo el contenido del ecosistema y los recursos de Starknet. Queremos crear un entorno interactivo que facilite el aprendizaje para los nuevos desarrolladores en este ecosistema, brindando una experiencia accesible y divertida. Además, Stark Easy busca potenciar los conocimientos de quienes están dando sus primeros pasos o desean ampliar su expertise.
 
-Nadai's Cairo Learning dApp is made out of the following sections:
+Esta aplicación es una versión de educativa aún en Alpha, avanze con precaución.
 
-## Home:
-A form that detects the balance of the added tokens. A test token called `NAI` has been deployed on Cairo 1 (which allows free token minting), as well as tokens such as `ETH`, `DAI`, `WBTC`, or `USDT`. In the form, you need to enter the `Recipient`, `Amount`, and a secret word `Nadai` to unlock the `Send` button.
+Este proyecto se estructura en tres secciones fundamentales:
 
-In this section, we aim to showcase the power of customizing ERC-20 token transfers. You can view the transaction data (`Calldata`) and see how it is executed in the explorer.
+- **Stark Jitsu**: Aquí encontrarás una compilación de recursos de aprendizaje, talleres, documentos y espacios de estudio.
 
-![Alt text](src/assets/image.png)
+- **Stark Adobencha**: Una sección de entretenimiento educativo, donde podrás divertirte mientras aprendes acerca de diversos temas, tal como los abordados en Stark Jitsu.
 
-## HDS:
-In this section we want to improve the experience of the community around the biweekly **"Hablando de Starknet"** Spanish-speaking show. Here we want to issue our POAPs under the form of NFTs on Starknet, where the secret word mentioned during the Space will unlock the corresponding button to mint the `NHT` token. The idea is to migrate the ERC-721 contracts from Cairo 0 to Cairo contracts, with each secret word hidden within the contract.
+- **Stark Dev-Station**: Esta sección ofrece una variedad de recursos tanto para usuarios como para desarrolladores. Explora aspectos relacionados con Cairo, despliega contratos y descubre el potencial de Starknet de primera mano.
 
-Therefore, in this section, you can learn about Starknet while being able to claim your `NHT` tokens with the secret word mentioned in the podcast. Furthermore, these `NHT` tokens will be displayed on `Braavos`, `Explorer` and more.
+### Stark Jitsu
 
-![Alt text](src/assets/image-2.png)
+En Stark Jitsu, podrás acceder a:
 
-## NHT:
-A design gallery for each HDS-related ERC-721 token, loading the metadata of each space. You can also send a token by providing the `From`, `Recipient`, and `Token ID` values, along with the secret word to unlock the "Nadai" button.
+- **Hds:** Un espacio que simula la experiencia vivida en HDS (Hablando de Starknet), donde cada invitado comparte su conocimiento sobre temas específicos del ecosistema. Estamos migrando este espacio con POAP aquí, donde cada palabra secreta desbloqueará el botón correspondiente para crear cada token `NHT`. La idea es migrar los contratos de ERC-721 de Cairo 0 a contratos Cairo y que cada palabra pueda estar oculta en el propio contrato.
 
-In this section, we reinforce what was seen in the token form. This time, we will see how the design is visualized in the transaction, the transaction data (`Calldata`), and how to easily transfer our POAP tokens.
+En esta sección, podemos aprender sobre el ecosistema con invitados de habla hispana. Podemos reclamar nuestros `NHT` con la palabra secreta del espacio, y estos `NHT` se pueden visualizar en `Braavos`, `Exploradores`...
 
-![Alt text](src/assets/image-1.png)
+- **StarknetEs:** Esta pestaña está dedicada a los Jueves de Cairo, que realizamos para la comunidad de habla hispana. También se añadirán recursos oficiales como Cairo Book, Starknet Book, Cairo Lang Docs, Starknet Docs...
 
-## Starknet en Español:
-This tab is dedicated to **"Jueves de Cairo"** which are **"Cairo-Thursdays"** organized by the Spanish-speaking community. We will also add official resources such as the Cairo Book, Starknet Book, Cairo Lang Docs, and Starknet Docs.
+- **Workshop:** Esta pestaña está dedicada al Basecamp de Pioneros, el primer basecamp descentralizado de habla hispana impulsado por Starkware y llevado a cabo por algunos miembros de la comunidad. También puedes encontrar una serie de 7 talleres impartidos por L2 en Español, con Omar Espejel y StarknetEs.
 
-![Alt text](src/assets/image-3.png)
+### Stark Adobencha
 
-## Workshop:
-This tab is dedicated to the "Basecamp de Pioneros," the first decentralized basecamp for the Spanish-speaking community powered by Starkware and led by some members of the community. You can also find a series of 7 workshops conducted by L2 en Español, featuring Omar Espejel and StarknetEs.
+Aquí puedes experimentar el entretenimiento educativo que te ofrecemos.
 
-![Alt text](src/assets/image-4.png)
+### Stark Dev-Station
+Sumérgete en los recursos disponibles en Stark Dev-Station:
 
-## Terminal:
-This tab is designed for learning the Cairo syntax. The idea is to add the new syntax and have a simulation of the result printed in the terminal by running the appropriate command.
+- **Token Form:** Un formulario que detecta el saldo de los tokens agregados. Se ha desplegado un token de prueba llamado `NAI` en Cairo 1 (que permite el mint libre de tokens), así como tokens de `ETH`, `DAI`, `WBTC` o `USDT`. En el formulario, debes agregar el `Receipent`, la `Amount` y una palabra secreta `Nadai` para desbloquear el botón `Enviar`
 
-In this section, you can enhance learning with basic examples taken from Cairo-by-Example, Cairo-Book, Starknet-Book, or other libraries and resources. The goal is to read the code or contracts directly and test them without simulation, making it easier to learn the syntax through clear examples.
+En esta sección, intentamos mostrar el poder de personalizar envíos de tokens ERC-20. Podemos ver los datos de la transacción (`Calldata`) y mostrar cómo se ejecuta en el explorador.
 
-![Alt text](src/assets/image-5.png)
+- **NHT:** Una galería de los diseños de cada token ERC-721 lanzado, cargando los metadatos de cada uno de los espacios. También se puede enviar un token indicando los valores de `From`, `Recipient` y `Token ID`, además de la palabra secreta para desbloquear el botón "Nadai".
 
-## Multicall:
-This tab will teach the power of native Multicall in Cairo. In this form, you can "Mint" the "NAI" token and transfer both "NAI" and "ETH" if desired, by executing 3 different calls, each with its own set of data (`Calldata`).
+En esta sección, reforzaremos lo visto en el formulario de tokens. Esta vez veremos cómo se visualiza el diseño en la transacción, los datos de la transacción (`Calldata`) y cómo mover nuestros POAP de una manera sencilla.
 
-In this section, we can demonstrate how infinite approvals are no longer needed and how DeFi protocols in Starknet benefit from this power. The idea is to add various Multicall forms, including one for UDC, and provide an easy way for developers to deploy ERC-20, ERC-1155, AMM, Vault, or any other smart contract in Cairo that we want to include.
+- **Terminal:** Esta pestaña está diseñada para aprender la sintaxis de Cairo. La idea es ir agregando la nueva sintaxis y tener una simulación del resultado impresa en la Terminal, ejecutando el comando correspondiente.
 
-![Alt text](src/assets/image-6.png)
+En esta sección, se puede potenciar el aprendizaje con ejemplos básicos que se pueden extraer de Cairo-by-Example, Cairo-Book, Starknet-Book u otras bibliotecas y recursos. La idea es poder leer directamente el código o los contratos y probarlos sin simulación, lo que facilitaría el aprendizaje de la sintaxis mediante ejemplos claros.
 
-## Sign a message:
-We are working on hash functions for message signing. In the "Sign a message" section, you can see how, when signing data like EIP-712, we can obtain a hash and an additional point derived from the private key. These can be useful in larger projects, such as multi-signature scheme verification, signing data for airdrops, emails, names, and other configurations, as well as verifying an account with its login. In this example, you should enter the message **`Hello`** followed by the secret word **`Secret`**, and proceed to sign. A message will appear indicating that the word and message are correct, and you can perform the signing with the data in your wallet (this is a test mode and is not fully implemented yet).
+- **Estándar:** Esta pestaña está diseñada como un estándar para contratos de fácil desarrolo. Puede encontrar información sobre cada dato necesario, así como la lógica de los contratos en caso de que la necesites para otros desarrollos o formación, aquí mostraremos el Class Hash del contrato declarado y el número de argumentos necesarios para su despliegue.
 
-![Alt text](src/assets/image-8.png)
+Además, encontrarás un ejemplo de los argumentos pasados en cada uno por si decide desplegar un contrato estándar, puede ir directamente a la siguiente sección Universal.
 
-![Alt text](src/assets/image-7.png)
+- **Universal:** Esta pestaña está diseñada para desplegar contratos con un solo clic, utilizando el despliegue con el Universal Contract Deploy ([UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract)), lo que lo hace fácil, práctico y seguro para todos aquellos que deseen comenzar a probar de una manera sencilla. Solo necesitas decidir qué tipo de contrato necesitas y ajustar sus valores de acuerdo con tus requisitos.
 
-## Others:
-We will also begin working on additional sections and learning ideas. It will display the current block of the Gorli network or the connected network, the transactions in that block provided by the provider, and a calculation showing the transactions per second (TPS) loaded in that block. It will also sometimes detect your Starknet ID.
+Adicionalmente, proporcionaremos los pasos necesarios para convertir los valores a felt252, junto con una explicación y utilidad de cada uno.
 
---------
-import { useNavigate } from 'react-router-dom';
-import { useConnectors } from "@starknet-react/core";
-import styled from 'styled-components';
+- **Multicall:** Esta pestaña servirá para aprender el poder de Multicall nativo en Cairo. En este formulario, se puede `Mintear` el token `NAI` y transferir tanto `NAI`como `ETH`si así se desea, ejecutando 3 llamadas diferentes, cada una con su propio conjunto de datos (`Calldata`).
 
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-`;
+En esta sección, podemos enseñar cómo ya no se necesitan aprobaciones infinitas y cómo los protocolos DeFi en Starknet se benefician de este poder. La idea es agregar varios formularios de Multicall, incluido uno para UDC, y utilizar los parámetros necesarios para cada despliegue, brindando una forma sencilla para que los desarrolladores desplieguen ERC-20, ERC-1155, AMM, Vault o cualquier otro contrato inteligente en Cairo que deseemos agregar.
 
-const FormTitle = styled.h2`
-  font-size: 2em;
-  margin-bottom: 0rem;
-  color: grey;
-`;
+- **Multicall x100:** En esta pestaña podra hacer una multicall en la que llames 100 veces a mitn la cantidad de mint selcciona, todo en 1 transasacioon pero en 100 multillamads en un a transacions
 
-const FormTitle2 = styled.h2`
-  font-size: 3em;
-  margin-bottom: 3rem;
-  color: #000000;
-`;
+- **STARK Easy - ENS:** En esta sección contamos con un convertidor de felt, el cual le será de mucha utilidad si queiere usar el contraro de STARK Easy ENS, en el cual podrá reguistra su nombre asociada a la wallet que este coenctado, para tener un registro de su nombre con varios fines, en este caso hipotetcio inluso para saber assistensias a workshop segun horario del mint del PoaP.
 
-const StyledConnectButton = styled.button`
-  /* Estilos para el botón */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 2em;
-  font-family: 'teko', sans-serif;
-  outline: none;
-  border: 2px solid #000000;
-  border-radius: 50px;
-  padding: 2rem 4rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-  margin: 0 1rem;
+## Desarrollo y Agradecimientos
+Esta sección está reservada para reconocer a quienes han contribuido directa o indirectamente en el desarrollo y concepción de Stark Easy.
 
-  &:hover {
-    transform: scale(1.1);
-    color: #ffffff;
-    background-color: #000000;
-    border-color: #000000;
-  }
+- **Frontend Home**: Agradecemos a Beja y al equipo de KeepStrange por crear las maravillosas páginas de Madara y Tsubasa, de las cuales han sido las adaptaciones.
 
-  &::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border: 2px solid #000000;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    transition: all 0.2s ease;
-    border-color: #000000;
-  }
+- **StarknetEs**: Reconocemos a Starknet en Español por su amplio contenido sobre Starknet en español, y agradecemos el taller brindado L2 en Español en el ecosistema con la participación de Omar.
 
-  &:hover::after {
-    transform: translate(-50%, -50%) scale(1);
-    padding: 0.5rem;
-  }
+- **Starkware**: Agradecemos a Starkware por Pioneros, un basecamp descentralizado impartido por algunos alumnos y por brindarnos la oportunidad de presentar este material en español.
 
-  @media (max-width: 768px) {
-    font-size: 1.5em;
-    padding: 1.5rem 3rem;
-    margin: 1rem 0 0;
-  }
-  
-  img {
-    width: 30px; /* Ajusta el tamaño de la imagen según lo necesites */
-    margin-right: 1rem;
-  }
-`;
+- **HDS**: Extendemos nuestra gratitud a los fundadores de Stark Easy por ceder este espacio, ahora utilizado como centro de incubación para nuevos contenidos y contribuciones de invitados del ecosistema.
 
-const ConnectContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`;
+- **Terminal**: Reconocemos la utilidad de los ejemplos estándar de Cairo y Starknet proporcionados por Cairo by Examply y Starknet by Example, respectivamente. Agradecemos a Nethermind y LambdaClaas por estos grandes aportes.
 
-export default function Connect() {
-  const { connect } = useConnectors();
-  const navigate = useNavigate();
+- **Contrato de Owner**: Utilizamos el contrato del Starlknet Book creado por David Barreto, un Standard en la dApp que queremos seguir aumentando para nuestras operaciones.
 
-  const connectorsWithImages = [
-    {
-      id: 'Argent',
-      available: () => true,
-      image: 'src/assets/Argent.png'
-    },
-    {
-      id: 'Braavos',
-      available: () => true,
-      image: 'src/assets/Braavos.png'
-    }
-  ];
+- **Argent**: Algunos contratos adaptados del Min-Starknet son fundamentales para nuestra dApp educativa, como el ENS.
 
-  const handleConnect = async (connectorId:any) => {
-    // Lógica de conexión con el conector
-    await connect(connectorId);
-    navigate('/TokenForm');
-  };
+- **Converter**: Adaptado de Stark Util con la ayuda de Chat Gpt, mucahs gracias a ambos
 
-  return (
-    <ConnectContainer>
-      <StyledForm>
-        <FormTitle>Connect to:</FormTitle>
-        <FormTitle2>Stark Easy</FormTitle2>
-        {connectorsWithImages.map((connector) => (
-          <StyledConnectButton
-            onClick={() => handleConnect(connector.id)}
-            key={connector.id}
-            disabled={!connector.available()}
-          >
-            <img src={connector.image} alt={connector.id} />
-            Connect {connector.id}
-          </StyledConnectButton>
-        ))}
-      </StyledForm>
-    </ConnectContainer>
-  );
-}
+- **Starknet**: Utilizamos el contrato UDC para implementar despliegues universales, enriqueciendo nuestra dApp y haciéndola más accesible.
+
+- **Personajes**: Agradecemos a Midjourney por crear nuestros luchadores personalizados.
+
+- **Otros colaboradores**: Extendemos nuestro agradecimiento a todas las personas que han contribuido con ideas y desarrollo, desde Starknet.js hasta al SHARP, así como a los diseñadores gráficos de PoaP, creadores de contenidos y todos. También damos la bienvenida a quienes deseen sumarse y aportar al proyecto.
+
+Con estos agradecimientos, destacamos la colaboración y el esfuerzo conjunto que ha hecho posible la realización de nuestra visión. Esperamos seguir creciendo junto a nuestra comunidad.
