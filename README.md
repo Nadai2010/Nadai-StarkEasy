@@ -44,8 +44,9 @@ En esta sección, podemos aprender sobre el ecosistema con invitados de habla hi
 - **Workshop:** Esta pestaña está dedicada al Basecamp de Pioneros, el primer basecamp descentralizado de habla hispana impulsado por Starkware y llevado a cabo por algunos miembros de la comunidad. También puedes encontrar una serie de 7 talleres impartidos por L2 en Español, con Omar Espejel y StarknetEs.
 
 ### Stark Adobencha
+En esta sección de StarkEasy, podrás jugar juegos educativos en miniatura que forman parte de una aventura Starknet muy especial, donde te sentirás como un aprendiz de artes marciales listo para embarcarte en un viaje para obtener tus cinturones Starknet mientras derrotas enemigos peligrosos en el proceso. Personajes y paisajes creativos mejorarán tu experiencia de juego mientras te esfuerzas por alcanzar una alta posición en el Tablero de Líderes.
 
-Aquí puedes experimentar el entretenimiento educativo que te ofrecemos.
+Tendrás que escoger entre dos idiomas, cada uno con contenido exclusivo que podras revisar y superar las diversas pruebas con diversas preguntas por niveles y contenidos, aún en construcción en fase Alpha. 
 
 ### Stark Dev-Station
 Sumérgete en los recursos disponibles en Stark Dev-Station:
@@ -78,29 +79,29 @@ En esta sección, podemos enseñar cómo ya no se necesitan aprobaciones infinit
 
 - **STARK Easy - ENS:** En esta sección contamos con un convertidor de felt, el cual le será de mucha utilidad si queiere usar el contraro de STARK Easy ENS, en el cual podrá reguistra su nombre asociada a la wallet que este coenctado, para tener un registro de su nombre con varios fines, en este caso hipotetcio inluso para saber assistensias a workshop segun horario del mint del PoaP.
 
-## Desarrollo y Agradecimientos
-Esta sección está reservada para reconocer a quienes han contribuido directa o indirectamente en el desarrollo y concepción de Stark Easy.
+## Desarrollo y Reconocimientos
+En esta sección, deseamos reconocer a aquellos que han contribuido directa o indirectamente en el desarrollo y concepción de Stark Easy.
 
-- **Frontend Home**: Agradecemos a Beja y al equipo de KeepStrange por crear las maravillosas páginas de Madara y Tsubasa, de las cuales han sido las adaptaciones.
+- **Frontend Home**: 0xBeja y el equipo de KeepStrange por crear las páginas de Madara y Tsubasa, adaptadas para nuestra plataforma.
 
-- **StarknetEs**: Reconocemos a Starknet en Español por su amplio contenido sobre Starknet en español, y agradecemos el taller brindado L2 en Español en el ecosistema con la participación de Omar.
+- **StarknetEs**: Starknet en Español por su amplio contenido sobre Starknet en español y el taller L2 en Español con Omar.
 
-- **Starkware**: Agradecemos a Starkware por Pioneros, un basecamp descentralizado impartido por algunos alumnos y por brindarnos la oportunidad de presentar este material en español.
+- **Starkware**: Starkware por Pioneros, un basecamp descentralizado, y por permitirnos presentar este material en español.
 
-- **HDS**: Extendemos nuestra gratitud a los fundadores de Stark Easy por ceder este espacio, ahora utilizado como centro de incubación para nuevos contenidos y contribuciones de invitados del ecosistema.
+- **HDS**: Los fundadores de Stark Easy por ceder este espacio como centro de incubación para nuevos contenidos y contribuciones.
 
-- **Terminal**: Reconocemos la utilidad de los ejemplos estándar de Cairo y Starknet proporcionados por Cairo by Examply y Starknet by Example, respectivamente. Agradecemos a Nethermind y LambdaClaas por estos grandes aportes.
+- **Terminal**: La utilidad de los ejemplos estándar de Cairo y Starknet proporcionados por Cairo by Example y Starknet by Example, de Netherminh y LambdaClass respectivamente.
 
-- **Contrato de Owner**: Utilizamos el contrato del Starlknet Book creado por David Barreto, un Standard en la dApp que queremos seguir aumentando para nuestras operaciones.
+- **Contrato de Owner**: El contrato del Starknet Book creado por David Barreto, un estándar en la dApp.
 
-- **Argent**: Algunos contratos adaptados del Min-Starknet son fundamentales para nuestra dApp educativa, como el ENS.
+- **Argent**: Contratos adaptados del Min-Starknet, fundamentales para nuestra dApp educativa, como el ENS.
 
-- **Converter**: Adaptado de Stark Util con la ayuda de Chat Gpt, mucahs gracias a ambos
+- **Converter**: Adaptado de Stark Util con la ayuda de Chat Gpt.
 
-- **Starknet**: Utilizamos el contrato UDC para implementar despliegues universales, enriqueciendo nuestra dApp y haciéndola más accesible.
+- **Starknet**: El contrato UDC para implementar despliegues universales.
 
-- **Personajes**: Agradecemos a Midjourney por crear nuestros luchadores personalizados.
+- **Personajes**: Midjourney por crear nuestros luchadores personalizados.
 
-- **Otros colaboradores**: Extendemos nuestro agradecimiento a todas las personas que han contribuido con ideas y desarrollo, desde Starknet.js hasta al SHARP, así como a los diseñadores gráficos de PoaP, creadores de contenidos y todos. También damos la bienvenida a quienes deseen sumarse y aportar al proyecto.
+- **Otros colaboradores**: A todas las personas que han contribuido con ideas y desarrollo, desde Starknet.js hasta SHARP, diseñadores gráficos de PoaP, creadores de contenido y más. También damos la bienvenida a nuevos aportantes.
 
-Con estos agradecimientos, destacamos la colaboración y el esfuerzo conjunto que ha hecho posible la realización de nuestra visión. Esperamos seguir creciendo junto a nuestra comunidad.
+Con estos agradecimientos, destacamos el esfuerzo que ha hecho posible la realización de nuestra visión. Esperamos seguir creciendo junto a nuestra comunidad.
