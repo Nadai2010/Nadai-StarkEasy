@@ -1,4 +1,4 @@
-import{s as t,j as s,S as e}from"./index-4e8cb8a7.js";const r=t.div`
+import{s as e,j as s}from"./index-821b54eb.js";const t="/assets/MapLevelEn-b61a513e.png",a=e.div`
   width: 100%;
 
   img {
@@ -10,4 +10,4 @@ import{s as t,j as s,S as e}from"./index-4e8cb8a7.js";const r=t.div`
   @media (max-width: 64em) {
     min-width: 40vh;
   }
-`,i=()=>s.jsx(r,{children:s.jsx("img",{src:e,alt:"Stark Easy Cover"})});export{i as default};
+`,r=()=>s.jsx(a,{children:s.jsx("img",{src:t,alt:"Stark"})});export{r as default};
