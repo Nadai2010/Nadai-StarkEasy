@@ -19,128 +19,134 @@
 </div>
 
 ## Stark Easy
-En este documento, exploraremos la creación de Stark Easy, enfocándonos en sus principios y visión. Nuestra meta es establecer una biblioteca integral que abarque todo el contenido del ecosistema y los recursos de Starknet. Queremos crear un entorno interactivo que facilite el aprendizaje para los nuevos desarrolladores en este ecosistema, brindando una experiencia accesible y divertida. Además, Stark Easy busca potenciar los conocimientos de quienes están dando sus primeros pasos o desean ampliar su expertise.
+In this document, we will explore the creation of Stark Easy, focusing on its principles and vision. Our goal is to establish a comprehensive library that covers the entire content of the ecosystem and the resources of Starknet. We want to create an interactive environment that facilitates learning for new developers in this ecosystem, providing an accessible and enjoyable experience. Additionally, Stark Easy aims to enhance the knowledge of those who are taking their first steps or wish to expand their expertise.
 
-Esta aplicación es una versión de educativa aún en Alpha, avanze con precaución.
+Please note that this application is an educational version still in Alpha, so proceed with caution.
 
-Este proyecto se estructura en tres secciones fundamentales:
+This project is structured into three fundamental sections:
 
-- **Stark Jitsu**: Aquí encontrarás una compilación de recursos de aprendizaje, talleres, documentos y espacios de estudio.
+- **Stark Jitsu**: Here, you will find a compilation of learning resources, workshops, documents, and study spaces.
 
-- **Stark Adobencha**: Una sección de entretenimiento educativo, donde podrás divertirte mientras aprendes acerca de diversos temas, tal como los abordados en Stark Jitsu.
+- **Stark Adobencha**: This is an educational entertainment section where you can have fun while learning about various topics, similar to those covered in Stark Jitsu.
 
-- **Stark Dev-Station**: Esta sección ofrece una variedad de recursos tanto para usuarios como para desarrolladores. Explora aspectos relacionados con Cairo, despliega contratos y descubre el potencial de Starknet de primera mano.
+- **Stark Dev-Station**: This section offers a variety of resources for both users and developers. You can explore aspects related to Cairo, deploy contracts, and discover the potential of Starknet first hand.  
 
 ## Stark Jitsu
 
-En Stark Jitsu, podrás acceder a:
+In Stark Jitsu, you will have access to:
 
 #### Hds:
-Un espacio que simula la experiencia vivida en HDS (Hablando de Starknet), donde cada invitado comparte su conocimiento sobre temas específicos del ecosistema. Estamos migrando este espacio con POAP aquí, donde cada palabra secreta desbloqueará el botón correspondiente para crear cada token `NHT`. La idea es migrar los contratos de ERC-721 de Cairo 0 a contratos Cairo y que cada palabra pueda estar oculta en el propio contrato.
+A space that simulates the experience of HDS (Talking about Starknet), where each guest shares their knowledge about specific topics in the ecosystem. We are migrating this space with POAP here, where each secret word will unlock the corresponding button to create each `NHT` token. The idea is to migrate the ERC-721 contracts from Cairo 0 to Cairo contracts, where each word can be hidden in their own contract.
 
-En esta sección, podemos aprender sobre el ecosistema con invitados de habla hispana. Podemos reclamar nuestros `NHT` con la palabra secreta del espacio, y estos `NHT` se pueden visualizar en `Braavos`, `Exploradores`...
+In this section, we can learn about the ecosystem with Spanish-speaking guests. We can claim our `NHT` using the secret word from the space, and these `NHT` can be viewed in `Braavos`, `Explorers`... 
+
 
 ![Alt text](hds.png)
 
 #### StarknetEs:
-Esta pestaña está dedicada a los Jueves de Cairo, que realizamos para la comunidad de habla hispana. También se añadirán recursos oficiales como Cairo Book, Starknet Book, Cairo Lang Docs, Starknet Docs...
+This tab is dedicated to Cairo Thursdays, which we organize for the Spanish-speaking community. Official resources such as Cairo Book, Starknet Book, Cairo Lang Docs, Starknet Docs, will also be added here.  
 
 ![Alt text](jueves.png)
 ![Alt text](starknetes.png)
 
 #### Workshop:
-Esta pestaña está dedicada al Basecamp de Pioneros, el primer basecamp descentralizado de habla hispana impulsado por Starkware y llevado a cabo por algunos miembros de la comunidad. También puedes encontrar una serie de 7 talleres impartidos por L2 en Español, con Omar Espejel y StarknetEs.
+This tab is dedicated to the Pioneers Basecamp, the first decentralized Spanish-speaking basecamp powered by Starkware and carried out by some members of the community. You can also find a series of 7 workshops conducted by L2 in Spanish, featuring Omar Espejel and StarknetEs.  
 
 ![Alt text](workshop.png)
 
 ## Stark Adobencha
-En esta sección de StarkEasy, podrás jugar juegos educativos en miniatura que forman parte de una aventura Starknet muy especial, donde te sentirás como un aprendiz de artes marciales listo para embarcarte en un viaje para obtener tus cinturones Starknet mientras derrotas enemigos peligrosos en el proceso. Personajes y paisajes creativos mejorarán tu experiencia de juego mientras te esfuerzas por alcanzar una alta posición en el Tablero de Líderes.
+In this section of StarkEasy, you will be able to play educational mini-games that are part of a special Starknet adventure, where you will feel like a martial arts apprentice ready to embark on a journey to earn your Starknet belts while defeating dangerous enemies along the way. Creative characters and landscapes will enhance your gaming experience as you strive to achieve a high position on the Leaderboard.  
 
 ![Alt text](map.png)
 
-
-Tendrás que escoger entre dos idiomas, cada uno con contenido exclusivo que podras revisar y superar las diversas pruebas con diversas preguntas por niveles y contenidos de tus Sensei favorito, aún en construcción en fase Alpha. 
+You'll have the choice between two languages, each with exclusive content that you can explore and overcome various challenges with different levels of questions and materials from your favorite Sensei. This section is still under construction in the Alpha phase.   
 
 ![Alt text](history.png)
 
 ## Stark Dev-Station
-Sumérgete en los recursos disponibles en Stark Dev-Station:
+Immerse yourself in the available resources in Stark Dev-Station:
 
 #### Token Form:
-Un formulario que detecta el saldo de los tokens agregados. Se ha desplegado un token de prueba llamado `NAI` en Cairo 1 (que permite el mint libre de tokens), así como tokens de `ETH`, `DAI`, `WBTC` o `USDT`. En el formulario, debes agregar el `Receipent`, la `Amount` y una palabra secreta `Nadai` para desbloquear el botón `Enviar`
+A form that detects the balance of added tokens. A test token called `NAI` has been deployed on Cairo 1 (which allows for free minting of tokens), as well as tokens like `ETH`, `DAI`, `WBTC`, or `USDT`. In the form, you need to add the `Recipient`, the `Amount`, and a secret word `Nadai` to unlock the Send button.
 
-En esta sección, intentamos mostrar el poder de personalizar envíos de tokens ERC-20. Podemos ver los datos de la transacción (`Calldata`) y mostrar cómo se ejecuta en el explorador.
+In this section, we aim to showcase the power of customizing ERC-20 token transfers. We can view transaction data (`Calldata`) and demonstrate how it is executed in the explorer. 
+
 
 ![Alt text](token.png)
 
 #### NHT: 
-Una galería de los diseños de cada token ERC-721 lanzado, cargando los metadatos de cada uno de los espacios. También se puede enviar un token indicando los valores de `From`, `Recipient` y `Token ID`, además de la palabra secreta para desbloquear el botón "Nadai".
+A gallery showcasing the designs of each ERC-721 token released, loading the metadata of each space. You can also send a token by indicating the values of  `From`, `Recipient` and `Token ID` along with the secret word to unlock the `Nadai` button.
 
-En esta sección, reforzaremos lo visto en el formulario de tokens. Esta vez veremos cómo se visualiza el diseño en la transacción, los datos de la transacción (`Calldata`) y cómo mover nuestros POAP de una manera sencilla.
+In this section, we reinforce what we've learned in the token form. This time, we will see how the design is displayed in the transaction, the transaction data (`Calldata`), and how to move our POAP in a straightforward manner.  
 
 ![Alt text](nht.png)
 
 #### Terminal:
-Esta pestaña está diseñada para aprender la sintaxis de Cairo. La idea es ir agregando la nueva sintaxis y tener una simulación del resultado impresa en la Terminal, ejecutando el comando correspondiente.
+This tab is designed to learn the syntax of Cairo. The idea is to gradually add the new syntax and have a simulation of the result printed in the Terminal by executing the corresponding command.
 
-En esta sección, se puede potenciar el aprendizaje con ejemplos básicos que se pueden extraer de Cairo-by-Example, Cairo-Book, Starknet-Book u otras bibliotecas y recursos. La idea es poder leer directamente el código o los contratos y probarlos sin simulación, lo que facilitaría el aprendizaje de la sintaxis mediante ejemplos claros.
+In this section, you can enhance your learning with basic examples extracted from Cairo-by-Example, Cairo-Book, Starknet-Book, or other libraries and resources. The goal is to be able to directly read the code or contracts and test them without simulation, which would facilitate learning the syntax through clear examples.  
+
 
 ![Alt text](terminal.png)
 
-#### Estándar:
-Esta pestaña está diseñada como un estándar para contratos de fácil desarrolo. Puede encontrar información sobre cada dato necesario, así como la lógica de los contratos en caso de que la necesites para otros desarrollos o formación, aquí mostraremos el Class Hash del contrato declarado y el número de argumentos necesarios para su despliegue.
+#### Standard:
+This tab is designed as a standard for easily developable contracts. You can find information about each required data, as well as the contract logic in case you need it for other developments or training. Here, we will display the Class Hash of the declared contract and the number of arguments required for its deployment.
 
-Además, encontrarás un ejemplo de los argumentos pasados en cada uno por si decide desplegar un contrato estándar, puede ir directamente a la siguiente sección Universal.
+In addition, you will find an example of the arguments passed in each one in case you decide to deploy a standard contract. You can then proceed directly to the next section, Universal.  
+
 
 ![Alt text](smart.png)
 
 #### Universal:
-Esta pestaña está diseñada para desplegar contratos con un solo clic, utilizando el despliegue con el Universal Contract Deploy ([UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract)), lo que lo hace fácil, práctico y seguro para todos aquellos que deseen comenzar a probar de una manera sencilla. Solo necesitas decidir qué tipo de contrato necesitas y ajustar sus valores de acuerdo con tus requisitos.
+This tab is designed to deploy contracts with just one click, using the Universal Deploy Contract  ([UDC](https://testnet.starkscan.co/contract/0x041a78e741e5af2fec34b695679bc6891742439f7afb8484ecd7766661ad02bf#write-contract)),deployment, making it easy, convenient, and secure for anyone looking to start testing in a straightforward way. You just need to decide what type of contract you need and adjust its values according to your requirements.
 
-Adicionalmente, proporcionaremos los pasos necesarios para convertir los valores a felt252, junto con una explicación y utilidad de cada uno.
+Additionally, we will provide the necessary steps to convert the values to felt252, along with an explanation and utility of each one.  
 
 ![Alt text](universal.png)
 
 #### Multicall:
-Esta pestaña servirá para aprender el poder de Multicall nativo en Cairo. En este formulario, se puede `Mintear` el token `NAI` y transferir tanto `NAI`como `ETH`si así se desea, ejecutando 3 llamadas diferentes, cada una con su propio conjunto de datos (`Calldata`).
+This tab will serve to learn about the power of native Multicall in Cairo. In this form, you can `Mint` the `NAI` token and `transfer` both `NAI` and `ETH` if desired, executing 3 different calls, each with its own set of data (`Calldata`).
 
-En esta sección, podemos enseñar cómo ya no se necesitan aprobaciones infinitas y cómo los protocolos DeFi en Starknet se benefician de este poder. La idea es agregar varios formularios de Multicall, incluido uno para UDC, y utilizar los parámetros necesarios para cada despliegue, brindando una forma sencilla para que los desarrolladores desplieguen ERC-20, ERC-1155, AMM, Vault o cualquier otro contrato inteligente en Cairo que deseemos agregar.
+
+In this section, we can demonstrate how infinite approvals are no longer needed and how DeFi protocols on Starknet benefit from this power. The idea is to add multiple Multicall forms, including one for UDC, and use the necessary parameters for each deployment, providing an easy way for developers to deploy ERC-20, ENS, ERC-1155, AMM, Vault, or any other smart contract in Cairo that we wish to add.  
+
 
 ![Alt text](multicall.png)
 
 #### Multicall x100:
-En esta pestaña podra hacer una multicall en la que llames 100 veces a mitn la cantidad de mint selcciona, todo en 1 transasacioon pero en 100 multillamads en un a transacions
+In this tab, you will be able to perform a multicall where you can mint the selected amount 100 times, all in one transaction but with 100 individual calls in a transaction. 
 
 ![Alt text](multicalx100.png)
 
 #### STARK Easy - ENS:
-En esta sección contamos con un convertidor de felt, el cual le será de mucha utilidad si queiere usar el contraro de STARK Easy ENS, en el cual podrá reguistra su nombre asociada a la wallet que este coenctado, para tener un registro de su nombre con varios fines, en este caso hipotetcio inluso para saber assistensias a workshop segun horario del mint del PoaP.
+In this section, we have a felt converter that will be very useful if you want to use the STARK Easy ENS contract. With this contract, you can register your name associated with the wallet you are connected to, to have a record of your name for various purposes. In this hypothetical case, it could even be used to determine workshop attendance based on the minting time of the POAP.  
 
 ![Alt text](ens.png)
 
-## Desarrollo y Reconocimientos
-En esta sección, deseamos reconocer a aquellos que han contribuido directa o indirectamente en el desarrollo y concepción de Stark Easy.
+## Development and Acknowledgements
+In this section, we would like to acknowledge those who have contributed directly or indirectly to the development and conception of Stark Easy.
 
-- **Frontend Home**: 0xBeja y el equipo de KeepStrange por crear las páginas de Madara y Tsubasa, adaptadas para nuestra plataforma.
+- **Frontend Home**: 0xBeja and the KeepStrange team for creating the Madara and Tsubasa pages, adapted for our platform.
 
-- **StarknetEs**: Starknet en Español por su amplio contenido sobre Starknet en español y el taller L2 en Español con Omar.
+- **StarknetEs**: Starknet en Español for their extensive content on Starknet in Spanish and the L2 workshop in Spanish with Omar.
 
-- **Starkware**: Starkware por Pioneros, un basecamp descentralizado, y por permitirnos presentar este material en español.
+- **Starkware**: Starkware for Pioneros, a decentralized basecamp, and for allowing us to present this material in Spanish.
 
-- **HDS**: Los fundadores de Stark Easy por ceder este espacio como centro de incubación para nuevos contenidos y contribuciones.
+- **HDS**: The founders of Stark Easy for providing this space as an incubation center for new content and contributions.
 
-- **Terminal**: La utilidad de los ejemplos estándar de Cairo y Starknet proporcionados por Cairo by Example y Starknet by Example, de Netherminh y LambdaClass respectivamente.
+- **Terminal**: The utility of the standard Cairo and Starknet example provided by Cairo by Example and Starknet by Example, by Nethermind and LambdaClass respectively.
 
-- **Contrato de Owner**: El contrato del Starknet Book creado por David Barreto, un estándar en la dApp.
+- **Contrato de Owner**:The Starknet Book contract created by David Barreto, a standard in the dApp.
 
-- **Argent**: Contratos adaptados del Min-Starknet, fundamentales para nuestra dApp educativa, como el ENS.
+- **Argent**:  Adapted contracts from Min-Starknet, fundamental for our educational dApp, such as ENS.
 
-- **Converter**: Adaptado de Stark Util con la ayuda de Chat Gpt.
+- **Converter**:  Adapted from Stark Util with the assistance of Chat Gpt.
 
-- **Starknet**: El contrato UDC para implementar despliegues universales.
+- **Starknet**: The UDC contract to implement universal deployments.
 
-- **Personajes**: Midjourney por crear nuestros luchadores personalizados.
+- **Personajes**: Midjourney for creating our custom fighters.
 
-- **Otros colaboradores**: A todas las personas que han contribuido con ideas y desarrollo, desde Starknet.js hasta SHARP, diseñadores gráficos de PoaP, creadores de contenido y más. También damos la bienvenida a nuevos aportantes.
+- **Otros colaboradores**: To all the people who have contributed with ideas and development, from Starknet.js to SHARP, PoaP graphic designers, content creators, and more. We also welcome new contributors.
 
-Con estos agradecimientos, destacamos el esfuerzo que ha hecho posible la realización de nuestra visión. Esperamos seguir creciendo junto a nuestra comunidad.
+With these acknowledgements, we highlight the effort that has made our vision a reality. We look forward to continuing to grow alongside our community.  
+
