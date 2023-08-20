@@ -21,6 +21,7 @@ import Multicall2Component from './components/Multicall2';
 import StarkEasyENSComponent from './components/StarkEasyENS';
 import styled from 'styled-components';
 
+
 const DropdownContainer = styled.div`
   position: relative;
   display: inline-block;
@@ -99,11 +100,12 @@ function App() {
     setStarkJitsuonOpen(false);
   };
 
+
   return (
     <Router>
       <GlobalStyles />
 
-      <div className="h-full p-4 flex flex-col">
+         <div className="h-full p-4 flex flex-col">
         {isConnected && (
           <nav className="mb-4">
                        
@@ -207,7 +209,9 @@ function App() {
           </Routes>
         </div>
       </div>
+ 
     </Router>
+    
   );
 }
 

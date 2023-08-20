@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useAccount, useConnectors, useStarkName } from "@starknet-react/core";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -25,9 +26,9 @@ const StarkName = styled.p`
   }
 `;
 
-const DisconnectButton = styled.button`
-  padding: 10px 20px;
-  font-size: 16px;
+const DisconnectButton = styled(Link)`
+  padding: 6px 20px;
+  font-size: 22px;
   font-weight: bold;
   background-color: #4f007cfb;
   color: rgba(255, 255, 255, 0.87);
@@ -35,6 +36,7 @@ const DisconnectButton = styled.button`
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none; /* Asegúrate de mantener el estilo de enlace */
 
   &:hover {
     background-color: #f33adaa1;
@@ -62,7 +64,7 @@ const Info = () => {
   return (
     <Container>
       <StarkName>{starkName || truncated}</StarkName>
-      <DisconnectButton type="button" onClick={disconnect}>
+      <DisconnectButton to="/" onClick={disconnect}>
         Disconnect
       </DisconnectButton>
     </Container>

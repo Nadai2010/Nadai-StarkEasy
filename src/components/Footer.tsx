@@ -137,7 +137,7 @@ const Footer = () => {
           <Logo />
           <IconList>
             <a
-              href=""
+              href="https://twitter.com/StarkEasy_ "
               target="_blank"
               rel="noopener noreferrer"
               aria-label="twitter"
