@@ -25,7 +25,7 @@ Please note that this application is an experimental version still in Alpha, so 
 
 This project is structured into three fundamental sections:
 
-- **Stark Jitsu**: Here, you will find a compilation of learning resources, workshops, documents, and study spaces.
+- **Stark Jitsu**: Here, you will find a compilation of learning resources, workshops, documents, and Podcasts.
 
 - **Stark Adobencha**: This is an educational entertainment section where you can have fun while learning about various topics, similar to those covered in Stark Jitsu.
 
