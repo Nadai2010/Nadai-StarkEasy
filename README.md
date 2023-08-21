@@ -19,7 +19,7 @@
 </div>
 
 ## Stark Easy
-In this document, we will explore the creation of Stark Easy, focusing on its principles and vision. Our goal is to establish a comprehensive library that covers the entire content of the ecosystem and the resources of Starknet. We want to create an interactive environment that facilitates learning for new developers in this ecosystem, providing an accessible and enjoyable experience. Additionally, Stark Easy aims to enhance the knowledge of those who are taking their first steps or wish to expand their expertise.
+In this document, we will explore the creation of Stark Easy, focusing on its principles and vision. Our goal is to establish a comprehensive library that covers a lot of content and resources about Starknet and its tech. We want to create an interactive environment that facilitates learning for new developers in this ecosystem, providing an accessible and enjoyable experience. Additionally, Stark Easy aims to enhance the knowledge of those who are taking their first steps or wish to expand their expertise.
 
 Please note that this application is an experimental version still in Alpha, so proceed with caution.
 
