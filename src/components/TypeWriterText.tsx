@@ -26,6 +26,7 @@ const Title = styled.h2`
   @media (max-width: 48em) {
     align-self: center;
     text-align: center;
+    margin-top: -20%;
   }
   @media (max-width: 40em) {
     width: 90%;
@@ -55,6 +56,7 @@ const Title2 = styled.h2`
   @media (max-width: 48em) {
     align-self: center;
     text-align: center;
+    margin-top: -20%;
   }
   @media (max-width: 40em) {
     width: 90%;
@@ -96,7 +98,8 @@ const ButtonContainer = styled.div`
   @media (max-width: 48em) {
     align-self: center;
     text-align: center;
-    height: 0vh;
+    height: 0vh; 
+    margin-bottom: -20rem;
 
     button {
       margin: 0 auto;

@@ -13,6 +13,18 @@ const CarouselContainer = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
+
+  @media (max-width: 64em) {
+    width: 90%;
+    text-align: center;
+  }
+  @media (max-width: 40em) {
+    text-align: center;
+  }
+
+  @media (max-width: 30em) {
+    text-align: center;
+  }
 `;
 
 const Slide = styled.div`
@@ -52,7 +64,9 @@ const SlideImage = styled.img`
   }
 
   @media (max-width: 768px) {
-    max-height: 50%; /* Ajusta la altura máxima de la imagen en dispositivos móviles */
+    max-height: 200px; 
+    width: 100%; 
+    margin-top: -2rem; 
   }
 
 `;

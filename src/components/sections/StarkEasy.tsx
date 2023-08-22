@@ -6,7 +6,7 @@ import Loading from "../Loading";
 
 const Section = styled.section`
   min-height: 100vh;
-  width: 110%;
+  width: 100%;
   background-color: #d81f3f;
   display: flex;
   justify-content: center;
@@ -99,7 +99,7 @@ const SubText = styled.p`
   text-align: left; /* Agregado para centrar el texto */
 
   @media (max-width: 64em) {
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: ${(props) => props.theme.fontxl}; /* Tamaño de fuente para pantallas medianas */
   }
@@ -124,13 +124,14 @@ const SubText2 = styled.p`
   text-align: left; /* Agregado para centrar el texto */
 
   @media (max-width: 64em) {
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: ${(props) => props.theme.fontxl}; /* Tamaño de fuente para pantallas medianas */
   }
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontxl}; /* Tamaño de fuente para dispositivos móviles */
     text-align: center;
+    
   }
 
   @media (max-width: 30em) {
@@ -150,9 +151,10 @@ const SubTextLight = styled.p`
 
 
   @media (max-width: 64em) {
-    width: 100%;
+    width: 90%;
+    hight: 90%;
     text-align: center;
-    font-size: ${(props) => props.theme.fontxl}; /* Tamaño de fuente para pantallas medianas */
+    font-size: ${(props) => props.theme.fontmd}; /* Tamaño de fuente para pantallas medianas */
   }
 
   @media (max-width: 30em) {
