@@ -1,4 +1,4 @@
-import{s as n,j as e,T as a,B as i}from"./index-8eae308d.js";const r=n.h2`
+import{s as n,j as e,T as a,B as i}from"./index-d9d2bebe.js";const r=n.h2`
   font-size: ${t=>t.theme.fontxxxl};
   text-transform: capitalize;
   width: 90%;
@@ -21,6 +21,7 @@ import{s as n,j as e,T as a,B as i}from"./index-8eae308d.js";const r=n.h2`
   @media (max-width: 48em) {
     align-self: center;
     text-align: center;
+    margin-top: -20%;
   }
   @media (max-width: 40em) {
     width: 90%;
@@ -48,6 +49,7 @@ import{s as n,j as e,T as a,B as i}from"./index-8eae308d.js";const r=n.h2`
   @media (max-width: 48em) {
     align-self: center;
     text-align: center;
+    margin-top: -20%;
   }
   @media (max-width: 40em) {
     width: 90%;
@@ -85,7 +87,8 @@ import{s as n,j as e,T as a,B as i}from"./index-8eae308d.js";const r=n.h2`
   @media (max-width: 48em) {
     align-self: center;
     text-align: center;
-    height: 0vh;
+    height: 0vh; 
+    margin-bottom: -20rem;
 
     button {
       margin: 0 auto;

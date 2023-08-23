@@ -207,6 +207,14 @@ const nfts = [
         description: "🎙️ Space con Nico - Cafe Cosmos",
         image: "https://ipfs.io/ipfs/QmdEmJRkeyz1FYY5RfLXVfKwEvkC68aSwzAfFh2v8n5ccW/1.gif",
       },
+    },  {
+      symbol: "NHT - 10",
+      contractAddress: "0x02adcd276ac03ca4b056a679fc312e0fa8ff9bd4adbfb8e6398782af4932d3a2",
+      metadata: {
+        name: "HDS - Episodio 10",
+        description: "🎙️ Space con SEED Latam y NacionBankless - Gobernanza y Comunidad",
+        image: "https://ipfs.io/ipfs/QmSqKcyzeCpvmgD5uLXnCYwRNt3ZxK4XSzZ8y8en5fVxko/1.png",
+      },
     },
   ];
 
