@@ -156,7 +156,7 @@ const secretWords: SecretWords = {
 };
 
 const HDS = () => {
-  const videoIds = ['4e9U75b6nE8', 'JX8LCerTteg', 'JqqSNU2Xl0Q', 'NGNepWPoqGM', '7cTqkwIW8Aw', 'BuBC0lbpRMs', 'rseCaWIvpoI', 'e65QNIe5EN8'];
+  const videoIds = ['4e9U75b6nE8', 'JX8LCerTteg', 'JqqSNU2Xl0Q', 'NGNepWPoqGM', '7cTqkwIW8Aw', 'BuBC0lbpRMs', 'rseCaWIvpoI', 'e65QNIe5EN8', 'JoPS5Ep9n2Y', '8E8S5KPOcaY',];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const { isConnected, account } = useAccount();
   const [secretWord, setSecretWord] = useState('');
