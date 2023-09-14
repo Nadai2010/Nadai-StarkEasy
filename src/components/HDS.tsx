@@ -154,7 +154,7 @@ const secretWords: SecretWords = {
   planeta: "0x018561e9475a9248f0580e3274fb8a027b33850dbd2e53f2d6acb9c14fcd0599",
   comunidad: "0x02adcd276ac03ca4b056a679fc312e0fa8ff9bd4adbfb8e6398782af4932d3a2",
   fruta: "0x00aa901204eb07aa024f7ec23da133f53e6609c32c1a7238fdbba7a332a494fa",
-  pasapelota: "0x025ce06e18d36c770be5cb7df9d51ae573356ebb08a86d6ee3fd4a3877dc0333",
+  manzana: "0x025ce06e18d36c770be5cb7df9d51ae573356ebb08a86d6ee3fd4a3877dc0333",
 };
 
 const HDS = () => {
