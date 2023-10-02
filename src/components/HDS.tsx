@@ -155,10 +155,11 @@ const secretWords: SecretWords = {
   comunidad: "0x02adcd276ac03ca4b056a679fc312e0fa8ff9bd4adbfb8e6398782af4932d3a2",
   fruta: "0x00aa901204eb07aa024f7ec23da133f53e6609c32c1a7238fdbba7a332a494fa",
   manzana: "0x025ce06e18d36c770be5cb7df9d51ae573356ebb08a86d6ee3fd4a3877dc0333",
+  papas :"0x00d490b8e99b17bc1c72f1e6b32aaf3b87ee11f7f62e53dcbd5bad9c9cd0cef7",
 };
 
 const HDS = () => {
-  const videoIds = ['4e9U75b6nE8', 'JX8LCerTteg', 'JqqSNU2Xl0Q', 'NGNepWPoqGM', '7cTqkwIW8Aw', 'BuBC0lbpRMs', 'rseCaWIvpoI', 'e65QNIe5EN8', 'JoPS5Ep9n2Y', '8E8S5KPOcaY',];
+  const videoIds = ['4e9U75b6nE8', 'JX8LCerTteg', 'JqqSNU2Xl0Q', 'NGNepWPoqGM', '7cTqkwIW8Aw', 'BuBC0lbpRMs', 'rseCaWIvpoI', 'e65QNIe5EN8', 'JoPS5Ep9n2Y', '8E8S5KPOcaY', '31hnUfH8Dhs', '6lJClS1Z1Wk'];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const { isConnected, account } = useAccount();
   const [secretWord, setSecretWord] = useState('');
