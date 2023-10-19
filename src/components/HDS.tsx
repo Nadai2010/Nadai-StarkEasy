@@ -156,6 +156,7 @@ const secretWords: SecretWords = {
   fruta: "0x00aa901204eb07aa024f7ec23da133f53e6609c32c1a7238fdbba7a332a494fa",
   manzana: "0x025ce06e18d36c770be5cb7df9d51ae573356ebb08a86d6ee3fd4a3877dc0333",
   papas :"0x00d490b8e99b17bc1c72f1e6b32aaf3b87ee11f7f62e53dcbd5bad9c9cd0cef7",
+  integridad: "0x056f4e227fe9e20d2cb9757c5737f1926b1818b5f16393d51c5765b81159a158",
 };
 
 const HDS = () => {
