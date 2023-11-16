@@ -158,6 +158,7 @@ const secretWords: SecretWords = {
   papas :"0x00d490b8e99b17bc1c72f1e6b32aaf3b87ee11f7f62e53dcbd5bad9c9cd0cef7",
   integridad: "0x056f4e227fe9e20d2cb9757c5737f1926b1818b5f16393d51c5765b81159a158",
   familia: "0x00412582b109Fa1698b6786E88DD7b3b9bD3514eE65aB13BeDA64a2eF95BD44F",
+  elmago: "0x0630c2d9f3278fb3e4ca21ed407d2067c89490abe17d562b52e87333212a1e47",
 };
 
 const HDS = () => {
